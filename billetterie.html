@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>Billeterie</h1>
+        <h2>Espace de pré-réservation</h2>
+        <fieldset>
+            <form action="" method="post">
+                <h3>Vos informations personnelles</h3>
+                <p>Veuillez renseigner votre nom, prenom, date de naisance et votre email. Un mail de confirmation vous sera envoyé.</p>
+                <label>Votre nom:</label>
+                <input type="text" name="nom" placeholder="Votre Nom..." required></br>
+                <label>Votre Prénom:</label>
+                <input type="text" name="prenom" placeholder="Votre Prénom..." required></br>
+                <label>Votre date de naissance:</label>
+                <input type="date" name="date_naissance" required></br>
+                <label>Votre adresse mail:</label>
+                <input type="mail" name="email" placeholder="mail@exemple.com" required>
+
+                <h3>La pré-réservation</h3>
+                <label>Nombres de places que vous souhaitez prendre :</label>
+                <input type="number" name="nb_places" placeholder="Nombre de places"></br>
+
+                <label>Quel(s) jour(s) souhaitez-vous venir?</label>
+                <div>
+                    <input type="checkbox" name="jour"> 30 juin 2023</input>
+                    <input type="checkbox" name="jour"> 1er juillet 2023</input>
+                    <input type="checkbox" name="jour"> 2 juillet 2023</input>
+                </div>
+                <input type="submit" value="Valider">
+            </form>
+        </fieldset>
+    </body>
+</html>
