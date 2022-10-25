@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="utf-8">
-    <title>Art'Ink Event</title>
+    <title>Programmation</title>
 
     <!-- Favicons -->
   <link href="img/favicon.png" rel="icon">
@@ -14,6 +14,12 @@
   </head>
 
 <body>
+
+  <header>
+    <?php
+    include('menu.html');
+    ?>
+  </header>
     <!--==========================
      PROGRAMMATION
     ============================-->
