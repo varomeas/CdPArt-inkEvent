@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="utf-8">
-    <title>Art'Ink Event</title>
+    <title>Programmation</title>
 
     <!-- Favicons -->
   <link href="img/favicon.png" rel="icon">
@@ -11,9 +11,17 @@
 
   <!-- Main Stylesheet File -->
   <link href="css/style-Copie.css" rel="stylesheet">
+  <link rel="stylesheet" href="style-menu-footer.css">
+
   </head>
 
 <body>
+
+  <header>
+    <?php
+    include('menu.html');
+    ?>
+  </header>
     <!--==========================
      PROGRAMMATION
     ============================-->
@@ -186,6 +194,10 @@
           </section>
         </div>
       </section>
+      
+      <?php
+       include("footer.html")
+      ?>
 </body>
 
 </html>

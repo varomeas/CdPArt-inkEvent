@@ -102,7 +102,8 @@
         <h2 id="textConcert">Concerts de Ingalawash & Gojira</h2>
         <img src="" alt="Image d'un concert">
     </div>
+    <?php
+    include("footer.html")
+        ?>
 </body>
-
-
 </html>

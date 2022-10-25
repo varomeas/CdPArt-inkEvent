@@ -1,0 +1,76 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+@font-face{
+    font-family: "druck";
+    src: url("./fonts/DrukWideBold.ttf")
+}
+
+/*MENU*/
+.nav-menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "druck";
+}
+
+  li a {
+    text-decoration: none;
+    color: black;
+  }
+
+  nav ul {
+    list-style-type: none;
+  }
+
+li a:hover{
+    color: #ffe246;
+}
+
+button{
+    font-family: "druck";
+    background-color: #ffe246;
+    border-color: #ffe246;
+    border-radius: 0.9vw;
+    border-style: none;
+    padding: 1vw;
+}
+
+button:hover{
+    background-color: black;
+    border-color: black;
+    color: #ffe246;
+}
+  
+
+/*FOOTER*/
+
+.container-footer{
+    display: flex;
+    background-color: black;
+    color: whitesmoke;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2vw;
+    margin-top: 2vw;
+}
+
+/*Media*/
+@media screen and (max-width: 700px){
+    .nav-menu{
+        flex-direction: column;
+    }
+
+    li{
+        line-height: 5vw;
+    }
+
+    .container-footer{
+        flex-direction: column;
+    }
+
+}
+
+
