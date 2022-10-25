@@ -3,21 +3,31 @@
 
     <head>
         <meta charset="utf-8">
-        <title>Art'Ink Event</title>
+        <title>Contact</title>
     
         <!-- Favicons -->
       <link href="img/favicon.png" rel="icon">
       <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
     
       <!-- Main Stylesheet File -->
-      <link href="css/style-Copie.css" rel="stylesheet">
+      <link href="style.css" rel="stylesheet">
       </head>
-      
+
 <body>
+
+    <header>
+        <?php
+        include('menu.html');
+        ?>
+      </header>
+<!--
+    <div>
+        <img src="img/artiste/banniere.png">
+    </div>-->
         <section>
-            <div class="col-lg-9 tab-pane fade show active" id="contact">
+            <div class="container">
     
-                <section id="venue" class="contact">
+                <section class="contact">
     
                     <div class="container-contact">
                         <div class="section-contact">
@@ -41,5 +51,12 @@
                 </section>
             </div>
         </section>
+
+        <footer>
+        <?php
+        include('footer.html');
+        ?>
+      </footer>
+
     </body>   
 </html>
