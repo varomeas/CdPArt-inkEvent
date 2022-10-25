@@ -11,6 +11,8 @@
 
   <!-- Main Stylesheet File -->
   <link href="css/style-Copie.css" rel="stylesheet">
+  <link rel="stylesheet" href="style-menu-footer.css">
+
   </head>
 
 <body>
@@ -192,6 +194,10 @@
           </section>
         </div>
       </section>
+      
+      <?php
+       include("footer.html")
+      ?>
 </body>
 
 </html>
