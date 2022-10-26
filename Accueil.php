@@ -16,6 +16,7 @@
     <header>
         <?php
     include("menu.html")
+    include("fleche.html")
         ?>
     </header>
 
