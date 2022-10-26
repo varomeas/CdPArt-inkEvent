@@ -6,7 +6,7 @@ body{
 
 @font-face{
     font-family: "druck";
-    src: url("fonts/DrukWideBold.ttf")
+    src: url("./fonts/DrukWideBold.ttf")
 }
 
 /*MENU*/

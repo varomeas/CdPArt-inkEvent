@@ -20,7 +20,7 @@ $j=11;
 <html>
     <head>
         <title>Créateurs</title>
-        <link rel="stylesheet" href="css.css"/>
+        <link rel="stylesheet" href="style/style.css"/>
         <link rel="stylesheet" href="style-menu-footer.css"/>
         <meta charset="utf-8">
 
@@ -34,7 +34,13 @@ $j=11;
                 include('menu.html');
                 ?>
             </header>
-
+<!--bannière-->
+        <div class="containerBanniere">
+            <img src="img/banniere.png" alt="Bannière Art'Ink" id="banniere">
+                <div class="texteBanniere">
+                        <p>Créateurs</p>
+                    </div>
+        </div>
 <?php
 // obtenir un lien cliquable sur l'image du créateur qui mènera a sa biographie//
 

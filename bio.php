@@ -9,7 +9,7 @@ $resultat->closeCursor();
 <html>
     <head>
         <title>Créateurs</title>
-        <link rel="stylesheet" href="css.css"/>
+        <link rel="stylesheet" href="style/style.css"/>
         <link rel="stylesheet" href="style-menu-footer.css"/>
         <meta charset="utf-8">
 

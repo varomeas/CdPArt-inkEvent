@@ -1,14 +1,23 @@
 body{
   font-family: "Druk";
   margin: 0;
-
 }
 
+/*police*/
+@font-face {
+	font-family: "Druk";
+	src: url("../fonts/DrukWideBold.ttf");
+}
+
+
+/*///////////////////////////////////////Accueil////////////////////////////////*/
+/*image menu*/
 header > img {
     display: flex;
     justify-content: center;
 }
 
+/*logo*/
 div > #logoArt {
   display: flex;
   justify-content: center;
@@ -18,17 +27,16 @@ div > #logoArt {
   margin: -40px 0px 0px 0;
 }
 
+/*banniere*/
 #banniere{
-
 width: 100%;
-
 }
 
 .containerBanniere{
   position: relative;
   text-align: center;
   color: rgb(255, 255, 255);
-  font-size: 60px;
+  font-size: 40px;
 }
 
 .texteBanniere{
@@ -36,8 +44,68 @@ width: 100%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
 }
 
+/*intro texte*/
+.textCentre{
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+  width: 60vw;
+  padding-top: 15px;
+  }
+
+/*bouton billetreie sous intro*/
+#containerBouton {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  padding: 30px;
+}
+
+button {
+  background-color: #ffe246;
+  border-radius: 0.9vw;
+  border-style: none;
+  color: #000000;
+  text-align: center;
+  font-size: 15px;
+  padding: 0px;
+  width: 140px;
+  height: 55px;
+  transition: all 0.5s;
+  margin: 5px;
+  cursor:pointer;
+  font-weight: 500;
+  font-family: "Druk";
+ 
+}
+button span {
+  display: inline-block;
+  position: relative;
+  transition: 0.9s;
+}
+button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.9s;
+}
+button:hover {
+  background-color: #000000;
+  color: #ffe246;
+}
+button:hover span {
+  padding-right: 25px;
+}
+button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/*texte présentation programme*/
 .prog{
   text-align: center;
 }
@@ -47,89 +115,6 @@ width: 100%;
     justify-content: space-around;
 }
 
-#textCentre{
-    
-text-align: center;
-
-}
-
-
-couleur{
-    color: #ffe246
-
-}
-
-
-#containerBouton {
-    display: flex;
-    justify-content: center;
-    margin-top: 15px;
-}
-
-
-button {
-    background-color: #ffe246;
-    border-radius: 0.9vw;
-    border-style: none;
-    color: #000000;
-    text-align: center;
-    font-size: 15px;
-    padding: 0px;
-    width: 140px;
-    height: 55px;
-    transition: all 0.5s;
-    margin: 5px;
-    cursor:pointer;
-    font-weight: 500;
-    font-family: "Druk";
-   
-  }
-  button span {
-    display: inline-block;
-    position: relative;
-    transition: 0.9s;
-  }
-  button span:after {
-    content: "\00bb";
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.9s;
-  }
-  button:hover {
-    background-color: #000000;
-    color: #ffe246;
-  }
-  button:hover span {
-    padding-right: 25px;
-  }
-  button:hover span:after {
-    opacity: 1;
-    right: 0;
-  }
-  
-/*
-.containerVid{
-
-
-width: 1500px;
-overflow:hidden;
-display:block;
-height: 360px;
-    
-}
-
-
-video{   
-    display: block;
-    height: auto;
-    min-height: 100%;
-    min-width: 100%; 
-    width: auto;
- }
-
-*/
 
 .flexActivites{
     display: flex;
@@ -137,9 +122,6 @@ video{
     justify-content:space-evenly;
     background-color: #e4e4e4;
 }
-
-
-
 
 
 article > p{
@@ -153,37 +135,279 @@ article > p{
 article > img{
   text-align: center;
 }
+
+/*règlage titre*/
+section > h2{
+  text-align: center;
+}
+
+section > h3 > .prog{
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+  }
+
+section > h4{
+text-align: center;
+}
   
-
+/*titre suspending*/
 #textSpending{
-
   color: #ffe246;
 }
 
-section > h2{
-    text-align: center;
+/*titre concerts*/
+#textConcert{
+  color: #ffe246;
+  text-align: center;
 }
 
-section > h3{
 
-    text-align: center;
+/*///////////////////////////////////Créateurs///////////////////////////////*/
+.h1-crea{
+  font-family: "druck";
+  text-align: center;
+  margin: 4vw 0vw 4vw 0vw;
 
-    }
+}
 
-section > h4{
+.h2-crea{
+  font-family: "druck";
+  text-align: center;
+  text-decoration: underline;
+  text-underline-position: under;
+  text-decoration-color: #ffe246;
+  margin: 4vw 0vw 4vw 0vw;
+}
 
+/*Images Page CREATEURS*/
+.img-crea img{
+  width: 30vw;
+  padding: 10px 100px ;
+  filter: drop-shadow(30px 10px 5px rgb(255,210, 70));
+}
+
+.img-crea{
+  display: flex;
+  justify-content: center;
+}
+/*////////////////////////////////////////PAGE BIO//////////////////////////////////*/
+.h2-bio{
+  font-family: "druck";
+}
+
+.image-bio img{
+  width: 30vw;
+}
+
+.container-bio {
+  display: flex;
+  align-items: center;
+  height: 90vh;
+  padding: 3vw 7vw 3vw 7vw;
+}
+
+.image-bio {
+  height: 80vh;
+  width: 50%;
+  
+}
+
+.pBio {
+  width: 50%;
+  margin-left: 0.3vw;
+  font-family: helvetica;
+  line-height: 2vw;
+  align-items: center;
+}
+
+button{
+  font-family: "druck";
+  background-color: #ffe246;
+  border-color: #ffe246;
+  border-radius: 0.9vw;
+  border-style: none;
+  padding: 1vw;
+}
+
+button a{
+  text-decoration: none;
+  color: black;
+}
+
+button:hover{
+  background-color: black;
+  border-color: black;
+  color: #ffe246;
+}
+
+button a:hover{
+  color: #ffe246;
+}
+
+/*////////////////////////////////////////////////programme//////////////////////////////////////////*/
+.titre_prog{
+  text-align: center;
+  font-size: 30px;
+}
+
+.button-day{
+  text-align: center;
+}
+
+/*///IMAGE PROG///*/
+.icone img{
+  width: 110px;
+}
+.artiste img{
+  width: 150px;
+}
+
+.texte {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0vw 0vw;
+  width: 33%;
+}
+
+.time{
+  width: 33%;
+}
+
+.artiste{
+  width: 33%;
+
+}
+
+.row-prog{
+  display: flex;
+  justify-content: space-around;
+  align-items: center ;
+  margin-top: 7vw;
+  background-color: blue;
+  
+
+}
+
+/*/////PLAN SALON//////*/
+.plan-du-salon{
+  display: flex;
+  align-items: center;
+  flex-direction: column ;
+  margin-bottom: 5vw;
+}
+
+.plan h2{
+  margin-bottom: 3vw;
+}
+
+
+/*/////////////////////////////////////////////Billeterie////////////////////////////////////////////////*/
+fieldset {
+  margin: 0;
+  border:1px none;
+  border-radius: 1.9vw; 
+}
+
+/*texte en couleur*/
+couleur{
+  color: #ccb323;
+}
+
+/*motif formulaire*/
+form{
+  width: 60vw;
+  background:#ffffe9;
+  border-radius:28px;
+  border: #bebed2 1px solid;
+  box-shadow: 3px 11px 21px -12px #000;
+  padding:50px 50px;
+  position: relative;
+  left: 17%;
+ }
+
+/*titre pré-reservation*/
+#reserve{
+margin-top: 20px;
 text-align: center;
 }
 
-@font-face {
-	font-family: "Druk";
-	src: url("../fonts/DrukWideBold.ttf");
+
+#titre_venir{
+  margin: 160px;
 }
 
-#textConcert{
-
-  color: #ffe246;
-  text-align: center;
-
-
+/*modification des champs*/
+input{
+  width:100%;
+  padding:20px;
+  box-sizing:border-box;
+  background:none;
+  border:0;
+  border-bottom:2px solid #bebed2;
 }
+
+/*container de dates de reservation*/
+.container-reservation {
+  display: flex;
+  justify-content:space-evenly;
+}
+
+/*taille checkbox*/
+.taille{
+  width:10px;
+  height:10px;
+  margin-top: 15px;
+}
+
+/*taille date*/
+#taille_date{
+  font-size: 12px;
+}
+
+/*Media*/
+@media screen and (max-width: 750px){
+  .pBio{
+      font-size: smaller;
+      line-height: 3vw;
+  }
+
+  .container-bio {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+
+  .h1-crea , .h2-crea{
+      font-size:medium;
+      margin-top: 7vw;
+  }
+
+  .img-crea{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+}
+
+/*////////////////////////////////////CARTE INTERACTIVE DANS CONTACT //////////////////////////////////*/
+.divMap {
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90vh;
+  padding: 0vw 2vw 4vw 2vw;
+}
+
+.mapContainer {
+  height: 80vh;
+  width: 80vw;
+  margin-top: 5vw;
+}
+
+.section-contact{
+  font-family: helvetica;
+  
+}
+
+
+
