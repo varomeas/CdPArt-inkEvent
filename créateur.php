@@ -1,7 +1,4 @@
-
-
-
-    <?php
+<?php
 //requetes envoyees a la bdd
 
 $bdd=new PDO('mysql:host=localhost;port=3306;dbname=artink_event','root','');
@@ -22,7 +19,7 @@ $j=11;
 
 <html>
     <head>
-        <title>Créateur</title>
+        <title>Créateurs</title>
         <link rel="stylesheet" href="css.css"/>
         <link rel="stylesheet" href="style-menu-footer.css"/>
         <meta charset="utf-8">
@@ -39,11 +36,11 @@ $j=11;
             </header>
 
 <?php
-// obtenir un lien cliquable sur l'image du créateur qui menera a sa biographie//
+// obtenir un lien cliquable sur l'image du créateur qui mènera a sa biographie//
 
-    echo '<h2>Les tatoueurs<h2>';
+    echo '<h2 class="h2-crea">Les tatoueurs<h2>';
 
-    echo '<h1>France</h1>';
+    echo '<h1 class="h1-crea">France</h1>';
     echo '<div class="img-crea">';
     for($i = 2; $i < 4; $i++){
       
@@ -53,7 +50,7 @@ $j=11;
     }
     echo '</div>';
 
-    echo '<h1>U.K</h1>';
+    echo '<h1 class="h1-crea">U.K</h1>';
     echo '<div class="img-crea">';
     for($i = 0; $i < 2; $i++){
       
@@ -62,7 +59,7 @@ $j=11;
     }
     echo '</div>';
     
-    echo '<h1>Belgique</h1>';
+    echo '<h1 class="h1-crea">Belgique</h1>';
     echo '<div class="img-crea">';
     for($i = 4; $i < 6; $i++){
       
@@ -71,7 +68,7 @@ $j=11;
     }
     echo '</div>';
 
-    echo '<h1>Allemagne</h1>';
+    echo '<h1 class="h1-crea">Allemagne</h1>';
     echo '<div class="img-crea">';
     for($i = 6; $i < 8; $i++){
       
@@ -80,7 +77,7 @@ $j=11;
     }
     echo '</div>';
 
-    echo '<h2>Les perceurs</h2>';
+    echo '<h2 class="h2-crea">Les perceurs</h2>';
     echo '<div class="img-crea">';
     for($i = 9; $i < 11; $i++){
       
@@ -89,7 +86,7 @@ $j=11;
     }
     echo '</div>';
 
-    echo '<h2>La dessinatrice</h2>';
+    echo '<h2 class="h2-crea">La dessinatrice</h2>';
     echo '<div class="img-crea">';
     for($i = 8; $i < 9; $i++){
       
@@ -97,12 +94,13 @@ $j=11;
       
     }
     echo '</div>';
-    ?>
+?>
         <footer>
             <?php
             include('footer.html');
             ?>
         </footer>
+
     </body>
 </html>
     
