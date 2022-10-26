@@ -1,8 +1,21 @@
-<html>
-    <header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<?php
+        include('menu.html');
+        include("fleche.html");
+        include("script/ScriptDarkTheme.html");
+        ?>    
+<header>
         <title>Page créateur</title>
     </header>
-    <body>
+    
         <div>
             <h2>Les tatoueurs</h2>
             <h1>France</h1>
@@ -25,8 +38,13 @@
             <h2>La dessinatrice</h2>
             <img src="img/artistes/lucile.jpg" height="600px">
         </div>
-    </body>
-    <fooder>
-
-    </fooder>
-</html>
+    <
+    <footer>
+    <?php
+        include('footer.html');
+        ?>
+    </footer>
+  
+</body>
+</html> 
+    

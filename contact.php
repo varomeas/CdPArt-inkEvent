@@ -20,6 +20,8 @@
     <header>
         <?php
         include('menu.html');
+        include("fleche.html");
+        include("script/ScriptDarkTheme.html");
         ?>
       </header>
 <!--
