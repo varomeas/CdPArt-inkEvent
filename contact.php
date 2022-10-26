@@ -6,13 +6,23 @@
         <title>Contact</title>
     
         <!-- Favicons -->
-      <link href="img/favicon.png" rel="icon">
+      <link href="img/artiste/favicon.png" rel="icon">
       <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
     
       <!-- Main Stylesheet File -->
-      <link href="style.css" rel="stylesheet">
-      <link rel="stylesheet" href="style-menu-footer.css">
-
+      <link href="css.css" rel="stylesheet">
+      <link href="style-menu-footer.css" rel="stylesheet">
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.1/dist/leaflet.css" 
+        integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+      crossorigin=""/>
+    <script
+      src="https://unpkg.com/leaflet@1.9.1/dist/leaflet.js"
+      integrity="sha256-NDI0K41gVbWqfkkaHj15IzU7PtMoelkzyKp8TOaFQ3s="
+      crossorigin=""
+    ></script>
       </head>
 
 <body>
@@ -21,14 +31,10 @@
         <?php
         include('menu.html');
         ?>
+        
       </header>
-<!--
-    <div>
-        <img src="img/artiste/banniere.png">
-    </div>-->
         <section>
             <div class="container">
-    
                 <section class="contact">
     
                     <div class="container-contact">
@@ -44,11 +50,10 @@
                             </p>
                         </div>
     
-                        <div class="row map">
-                            <div class="col-md-12 map">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2819.1568918985054!2d3.8838153!3d45.042038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f5fa53f56b82b3%3A0xdcc562821317984c!2sPl.%20du%20Breuil%2C%2043000%20Le%20Puy-en-Velay!5e0!3m2!1sfr!2sfr!4v1666598023384!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                            </div>
+                        <div  class="divMap">
+                            <div id="map" class="mapContainer"></div>
                         </div>
+
                     </div>
                 </section>
             </div>
@@ -59,6 +64,6 @@
         include('footer.html');
         ?>
       </footer>
-
+      <script src="contact.js"></script>
     </body>   
 </html>
