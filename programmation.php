@@ -79,7 +79,7 @@
                 <div class="col-md-2"><time>21:00</time></div>
                   <div class="col-md-10">
                     <div class="artiste">
-                      <img src="img/artiste/ingala.jpg">
+                      <img src="img/artistes/ingala.jpg">
                     </div>
                     <h4>Concert <span>Ingalawash</span></h4>
                     <p>Groupe de rock originaire du Puy-en-Velay est composé de cinq musiciens liés par une solide amitié. Le groupe rock même en patois pour montrer l'amour qu'il prote à ses origines. 
@@ -106,7 +106,7 @@
                 <div class="col-md-2"><time>14:00 - 16:00</time></div>
                 <div class="col-md-10">
                   <div class="artiste">
-                    <img src="img/artiste/lucile.jpg">
+                    <img src="img/artistes/lucile_prog.jpg">
                   </div>
                   <h4>Atelier dessin<span>Lucile Filhol</span></h4>
                   <p>Illustratrice originaire du Puy-en-Velay qui sera présente pour donner des cours et des conseils de dessins. </p>
@@ -117,7 +117,7 @@
                 <div class="col-md-2"><time>16:00</time></div>
                 <div class="col-md-10">
                   <div class="artiste">
-                    <img src="img/artiste/veg.png">
+                    <img src="img/artistes/veg.png">
                   </div>
                   <h4>Spectacle de suspending<span>Veg Silencio et sa troupe Endorphins Rising</span></h4>
                   <p>Le suspending est une pratique de modification corporelle permettant via des crochets fixés par piercing de suspendre un corps. Ces piercings sont installés peu de temps avant de réaliser la suspension et sont retirés par la suite.<br>
@@ -129,7 +129,7 @@
                 <div class="col-md-2"><time>22:00</time></div>
                 <div class="col-md-10">
                   <div class="artiste">
-                    <img src="img/artiste/gojia.jpg">
+                    <img src="img/artistes/gojia.jpg">
                   </div>
                   <h4>Concert <span>Gojira </span></h4>
                   <p>Gojira est un groupe de death metal français, originaire d'Ondres. Il est initialement formé en 1996 sous le nom de Godzilla, puis adopte le nom de Gojira en 2001. Le groupe est composé de quatre membres</p>
