@@ -1,6 +1,9 @@
 #hautpage { 
 float: right;
 margin-right: 2vw;
- 
+  }
+  #hautpage img {
+    width: 35px;
+    position: fixed;
     
   }
