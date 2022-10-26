@@ -1,0 +1,132 @@
+
+
+@font-face{
+    font-family: "druck";
+    src: url("Druk\ Wide\ Bold.ttf");
+}
+
+ 
+/*PAGE BIO*/
+.h2-bio{
+    font-family: "druck";
+}
+
+.image-bio img{
+    width: 30vw;
+}
+
+.container-bio {
+    display: flex;
+    align-items: center;
+    height: 90vh;
+    padding: 3vw 7vw 3vw 7vw;
+  }
+
+  .image-bio {
+    height: 80vh;
+    width: 50%;
+    
+  }
+  
+  .pBio {
+    width: 50%;
+    margin-left: 0.3vw;
+    font-family: helvetica;
+    line-height: 2vw;
+    align-items: center;
+  }
+
+button{
+    font-family: "druck";
+    background-color: #ffe246;
+    border-color: #ffe246;
+    border-radius: 0.9vw;
+    border-style: none;
+    padding: 1vw;
+}
+
+button a{
+    text-decoration: none;
+    color: black;
+}
+
+button:hover{
+    background-color: black;
+    border-color: black;
+    color: #ffe246;
+}
+
+button a:hover{
+    color: #ffe246;
+}
+/* PAGE CREATEUR*/
+.h1-crea{
+    font-family: "druck";
+    text-align: center;
+    margin: 4vw 0vw 4vw 0vw;
+
+}
+
+.h2-crea{
+    font-family: "druck";
+    text-align: center;
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-color: #ffe246;
+    margin: 4vw 0vw 4vw 0vw;
+}
+
+/*Images Page CREATEURS*/
+.img-crea img{
+    width: 30vw;
+    padding: 10px 100px ;
+    filter: drop-shadow(30px 10px 5px rgb(255,210, 70));
+}
+
+.img-crea{
+    display: flex;
+    justify-content: center;
+}
+
+
+/*Media*/
+@media screen and (max-width: 750px){
+    .pBio{
+        font-size: smaller;
+        line-height: 3vw;
+    }
+
+    .container-bio {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .h1-crea , .h2-crea{
+        font-size:medium;
+        margin-top: 7vw;
+    }
+
+    .img-crea{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+/*CARTE INTERACTIVE DANS CONTACT */
+.divMap {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90vh;
+    padding: 0vw 2vw 4vw 2vw;
+  }
+  
+  .mapContainer {
+    height: 80vh;
+    width: 50%;
+    margin-right: 1vw;
+  }
+

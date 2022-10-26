@@ -10,9 +10,7 @@
   <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Main Stylesheet File -->
-  <link href="css/style-Copie.css" rel="stylesheet">
-  <link rel="stylesheet" href="style-menu-footer.css">
-
+  <link href="style.css" rel="stylesheet">
   </head>
 
 <body>
@@ -49,37 +47,37 @@
           <div class="details">
   
             <!--Jour 1 -->
-            <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
+            <div role="tabpanel" class="container-j1" id="day-1">
   
               <div class="row-prog">
-                <div class="col-md-2"><time>13:00</time></div>
-                <div class="col-md-10">
+                <div class="time"><time>13:00</time></div>
+                <div class="texte">
                   <h4>Présentation des candidats pour le concours</h4>
                   <p>Présentation de tout les candidats, de leur spécialité de tatouage et quel pays ils représentent</p>
                 </div>
               </div>
   
               <div class="row-prog">
-                <div class="col-md-2"><time>14:00</time></div>
-                <div class="col-md-10">
+                <div class="time"><time>14:00</time></div>
+                <div class="texte">
                   <h4>Présentation du Jury</h4>
                   <p>Des tatoueurs reconnu pour leurs talents seront présent pour élire les meilleurs tatoueurs du concours</p>
                 </div>
               </div>
   
               <div class="row-prog">
-                <div class="col-md-2"><time>15:00 - 20:00</time></div>
-                <div class="col-md-10">
+                <div class="time"><time>15:00 - 20:00</time></div>
+                <div class="texte">
                   <h4>Ouverture des stands</h4>
                   <p>Divers stands seront ouvert afin de pouvoir faire des tatouages éphémères, du heiné, des piercings, des tatouages...</p>
                 </div>
               </div>
   
               <div class="row-prog">
-                <div class="col-md-2"><time>21:00</time></div>
-                  <div class="col-md-10">
+                <div class="time"><time>21:00</time></div>
+                  <div class="texte">
                     <div class="artiste">
-                      <img src="img/artistes/ingala.jpg">
+                      <img src="img/artiste/ingala.jpg">
                     </div>
                     <h4>Concert <span>Ingalawash</span></h4>
                     <p>Groupe de rock originaire du Puy-en-Velay est composé de cinq musiciens liés par une solide amitié. Le groupe rock même en patois pour montrer l'amour qu'il prote à ses origines. 
@@ -92,21 +90,21 @@
   
             <!-- Jour 2 -->
   
-            <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-2">
+            <div role="tabpanel" class="container-j2" id="day-2">
   
               <div class="row-prog">
-                <div class="col-md-2"><time>10:00 - 20:00</time></div>
-                <div class="col-md-10">
+                <div class="time"><time>10:00 - 20:00</time></div>
+                <div class="texte">
                   <h4>Ouverture des stands</h4>
                   <p>Tatouages, piercings, tatouage éphémère, heiné...</p>
                 </div>
               </div>
   
               <div class="row-prog">
-                <div class="col-md-2"><time>14:00 - 16:00</time></div>
-                <div class="col-md-10">
+                <div class="time"><time>14:00 - 16:00</time></div>
+                <div class="texte">
                   <div class="artiste">
-                    <img src="img/artistes/lucile_prog.jpg">
+                    <img src="img/artiste/lucile.jpg">
                   </div>
                   <h4>Atelier dessin<span>Lucile Filhol</span></h4>
                   <p>Illustratrice originaire du Puy-en-Velay qui sera présente pour donner des cours et des conseils de dessins. </p>
@@ -114,10 +112,10 @@
               </div>
   
               <div class="row-prog">
-                <div class="col-md-2"><time>16:00</time></div>
-                <div class="col-md-10">
+                <div class="time"><time>16:00</time></div>
+                <div class="texte">
                   <div class="artiste">
-                    <img src="img/artistes/veg.png">
+                    <img src="img/artiste/veg.png">
                   </div>
                   <h4>Spectacle de suspending<span>Veg Silencio et sa troupe Endorphins Rising</span></h4>
                   <p>Le suspending est une pratique de modification corporelle permettant via des crochets fixés par piercing de suspendre un corps. Ces piercings sont installés peu de temps avant de réaliser la suspension et sont retirés par la suite.<br>
@@ -126,10 +124,10 @@
               </div>
   
               <div class="row-prog">
-                <div class="col-md-2"><time>22:00</time></div>
-                <div class="col-md-10">
+                <div class="time"><time>22:00</time></div>
+                <div class="texte">
                   <div class="artiste">
-                    <img src="img/artistes/gojia.jpg">
+                    <img src="img/artiste/gojia.jpg">
                   </div>
                   <h4>Concert <span>Gojira </span></h4>
                   <p>Gojira est un groupe de death metal français, originaire d'Ondres. Il est initialement formé en 1996 sous le nom de Godzilla, puis adopte le nom de Gojira en 2001. Le groupe est composé de quatre membres</p>
@@ -141,27 +139,27 @@
   
             <!-- Jour 3 -->
   
-            <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-3">
+            <div role="tabpanel" class="container-j3" id="day-3">
   
               <div class="row-prog">
-                <div class="col-md-2"><time>10:00 - 13:00</time></div>
-                <div class="col-md-10">
+                <div class="time"><time>10:00 - 13:00</time></div>
+                <div class="texte">
                   <h4>Ouverture des stands</h4>
                   <p>Tatouages, piercings, tatouage éphémère, heiné...</p>
                 </div>
               </div>
   
               <div class="row-prog">
-                <div class="col-md-2"><time>13:00</time></div>
-                <div class="col-md-10">
+                <div class="time"><time>13:00</time></div>
+                <div class="texte">
                   <h4>Présentation des gagnants du concours</h4>
                   <p>Défilé des mannequins qui auront été tatoués puis présentation des gagnants. </p>
                 </div>
               </div>
   
               <div class="row-prog">
-                <div class="col-md-2"><time>18:00 - 20:00</time></div>
-                <div class="col-md-10">
+                <div class="time"><time>18:00 - 20:00</time></div>
+                <div class="texte">
                   <h4>Ouverture des stands</h4>
                   <p>Tatouages, piercings, tatouage éphémère, heiné...</p>
                 </div>
@@ -178,26 +176,29 @@
     ============================-->
   
       <section class="plan-du-salon">
-        <div class="" id="plan">
+        <div class="plan">
   
-          <section id="" class="plansite">
+          <section class="plansite">
             <div class="container-plan">
               <div class="section-plan">
                 <h2>Plan du salon</h2>
               </div>
               <div class="row plan">
-                <div class="col-lg-6">
+                <div class="image-plan">
                   <img src="img/artiste/gojia.jpg">
                 </div>
               </div>
             </div>
           </section>
+
         </div>
       </section>
-      
-      <?php
-       include("footer.html")
-      ?>
+
+      <footer>
+        <?php
+        include('footer.html');
+        ?>
+      </footer>
 </body>
 
 </html>
