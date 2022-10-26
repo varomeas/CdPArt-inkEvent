@@ -11,6 +11,8 @@
     
       <!-- Main Stylesheet File -->
       <link href="style.css" rel="stylesheet">
+      <link rel="stylesheet" href="style-menu-footer.css">
+
       </head>
 
 <body>

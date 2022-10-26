@@ -1,0 +1,189 @@
+body{
+  font-family: "Druk";
+  margin: 0;
+
+}
+
+header > img {
+    display: flex;
+    justify-content: center;
+}
+
+div > #logoArt {
+  display: flex;
+  justify-content: center;
+  width: 150px; 
+  height: 150px; 
+  overflow: hidden;
+  margin: -40px 0px 0px 0;
+}
+
+#banniere{
+
+width: 100%;
+
+}
+
+.containerBanniere{
+  position: relative;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 60px;
+}
+
+.texteBanniere{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.prog{
+  text-align: center;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+
+#textCentre{
+    
+text-align: center;
+
+}
+
+
+couleur{
+    color: #ffe246
+
+}
+
+
+#containerBouton {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+
+button {
+    background-color: #ffe246;
+    border-radius: 0.9vw;
+    border-style: none;
+    color: #000000;
+    text-align: center;
+    font-size: 15px;
+    padding: 0px;
+    width: 140px;
+    height: 55px;
+    transition: all 0.5s;
+    margin: 5px;
+    cursor:pointer;
+    font-weight: 500;
+    font-family: "Druk";
+   
+  }
+  button span {
+    display: inline-block;
+    position: relative;
+    transition: 0.9s;
+  }
+  button span:after {
+    content: "\00bb";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.9s;
+  }
+  button:hover {
+    background-color: #000000;
+    color: #ffe246;
+  }
+  button:hover span {
+    padding-right: 25px;
+  }
+  button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  
+/*
+.containerVid{
+
+
+width: 1500px;
+overflow:hidden;
+display:block;
+height: 360px;
+    
+}
+
+
+video{   
+    display: block;
+    height: auto;
+    min-height: 100%;
+    min-width: 100%; 
+    width: auto;
+ }
+
+*/
+
+.flexActivites{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    background-color: #e4e4e4;
+}
+
+
+
+
+
+article > p{
+  z-index: 1;
+  text-align: center;
+  color: rgb(53, 43, 43);
+  font-weight: bold;
+
+}
+
+article > img{
+  text-align: center;
+}
+  
+
+#textSpending{
+
+  color: #ffe246;
+}
+
+section > h2{
+    text-align: center;
+}
+
+section > h3{
+
+    text-align: center;
+
+    }
+
+section > h4{
+
+text-align: center;
+}
+
+@font-face {
+	font-family: "Druk";
+	src: url("../fonts/DrukWideBold.ttf");
+}
+
+#textConcert{
+
+  color: #ffe246;
+  text-align: center;
+
+
+}
