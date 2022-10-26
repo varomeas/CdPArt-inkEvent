@@ -11,7 +11,9 @@
 </head>
 <body>
 <?php
-    include("menu.html")
+    include("menu.html");
+    include("fleche.html");
+    include("script/ScriptDarkTheme.html");
         ?>
     <h1>Billeterie</h1>
         <h2>Espace de pré-réservation</h2>

@@ -15,8 +15,9 @@
 
     <header>
         <?php
-    include("menu.html")
-    include("fleche.html")
+    include("menu.html");
+    include("fleche.html");
+    include("script/ScriptDarkTheme.html");
         ?>
     </header>
 
@@ -54,7 +55,7 @@
     <br>
     <br>
     <div id="containerBouton">
-        <a href="billeterie.html"><button><span>Billeterie</span></button></a>
+        <a href="billeterie.html"><button id="billetterie"><span>Billeterie</span></button></a>
     </div>
     <br>
     <br>

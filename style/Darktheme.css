@@ -1,4 +1,8 @@
 .dark-theme {  
-    color: rgb(141, 160, 179);
-    background-color: black;
+    color: rgb(218, 219, 209);
+    background-color: rgb(82, 82, 82);
+}
+#darkMode{
+font-size: 14px;
+
 }
