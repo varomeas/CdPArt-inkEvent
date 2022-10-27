@@ -1,3 +1,5 @@
+<?php include("lang.php");?>
+
 <?php
 //requetes envoyees a la bdd
 
@@ -16,8 +18,8 @@ $nbinfo=count($tab);
 $j=11;
 
 ?>
-
-<html>
+<!DOCTYPE html>
+<html lang="<?php echo $lang;?>">
     <head>
         <title>Créateurs</title>
         <link rel="stylesheet" href="style/style.css"/>
@@ -38,16 +40,16 @@ $j=11;
         <div class="containerBanniere">
             <img src="img/banniere.png" alt="Bannière Art'Ink" id="banniere">
                 <div class="texteBanniere">
-                        <p>Créateurs</p>
+                        <p><?php echo titrepagecrea;?></p>
                     </div>
         </div>
-<?php
-// obtenir un lien cliquable sur l'image du créateur qui mènera a sa biographie//
 
-    echo '<h2 class="h2-crea">Les tatoueurs<h2>';
+<!--// obtenir un lien cliquable sur l'image du créateur qui mènera a sa biographie-->
 
-    echo '<h1 class="h1-crea">France</h1>';
-    echo '<div class="img-crea">';
+    <h2 class="h2-crea"><?php echo titretatoo;?><h2>
+
+    <h1 class="h1-crea"><?php echo france;?></h1>
+    <?php echo '<div class="img-crea">';
     for($i = 2; $i < 4; $i++){
       
       
@@ -55,18 +57,20 @@ $j=11;
       
     }
     echo '</div>';
-
-    echo '<h1 class="h1-crea">U.K</h1>';
-    echo '<div class="img-crea">';
-    for($i = 0; $i < 2; $i++){
+    ?>
+        <h1 class="h1-crea"><?php echo uk;?></h1>
+      
+        <?php echo '<div class="img-crea">';
+        for($i = 0; $i < 2; $i++){
       
         echo '<a href="bio.php?id='.$tableau[$i]['id_createur'].'"><img class="img-crea" src="'.$tableau[$i]['url_photo'].'"></a>';
       
     }
     echo '</div>';
-    
-    echo '<h1 class="h1-crea">Belgique</h1>';
-    echo '<div class="img-crea">';
+    ?>
+        <h1 class="h1-crea"><?php echo belgique;?></h1>
+
+    <?php echo '<div class="img-crea">';
     for($i = 4; $i < 6; $i++){
       
         echo '<a href="bio.php?id='.$tableau[$i]['id_createur'].'"><img class="img-crea" src="'.$tableau[$i]['url_photo'].'"></a>';
@@ -74,7 +78,9 @@ $j=11;
     }
     echo '</div>';
 
-    echo '<h1 class="h1-crea">Allemagne</h1>';
+    ?>
+        <h1 class="h1-crea"><?php echo allemagne;?></h1>
+    <?php
     echo '<div class="img-crea">';
     for($i = 6; $i < 8; $i++){
       
@@ -82,8 +88,10 @@ $j=11;
       
     }
     echo '</div>';
+    ?>
+    <h2 class="h2-crea"><?php echo titreperceur;?></h2>
 
-    echo '<h2 class="h2-crea">Les perceurs</h2>';
+    <?php
     echo '<div class="img-crea">';
     for($i = 9; $i < 11; $i++){
       
@@ -91,8 +99,10 @@ $j=11;
       
     }
     echo '</div>';
+    ?>
 
-    echo '<h2 class="h2-crea">La dessinatrice</h2>';
+    <h2 class="h2-crea"><?php echo titredessinatrice;?></h2>
+    <?php
     echo '<div class="img-crea">';
     for($i = 8; $i < 9; $i++){
       
