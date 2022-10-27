@@ -24,8 +24,9 @@
 <!--titre-->
         <h2 class="pre-resa">Espace de pré-réservation</h2>
 <!--formulaire-->
+<div class="fild">
         <fieldset>
-            <form action="" method="post">
+            <form  action="" method="post">
                 <h3 id="reserve">Vos informations personnelles</h3>
                 <p>Veuillez renseigner votre <couleur>nom</couleur>, <couleur>prénom</couleur>, <couleur>date de naisance</couleur> et votre <couleur>email</couleur>. Un mail de confirmation vous sera envoyé.</p>
                     <input type="text" name="nom" placeholder="Votre Nom..." required></input>
@@ -48,8 +49,16 @@
                 </div>
                 <div input type="submit" value="Valider" > <button>Valider</button></div>
             </form>
+            </div> 
         </fieldset>
-<?php include("footer.html")?>
+        
+        <div id="scroll_to_top">
+            <a href="#top"><img src="img/icones/fleche.png" alt="Retourner en haut" /></a>
+        </div>
+
+        <footer>
+        <?php include("footer.html")?>
+        </footer>
 </body>
 </html>
         
