@@ -99,8 +99,20 @@ define('lieux', 'Lieux: Place du Breuil, 43 000, Le Puy-en-Velay');
 
 define('datescontact', '- Vendredi 30 Juin<br>- Samedi 01 Juillet<br>- Dimanche 02 Juillet');
 
+/*billetterie*/
 
+define('introbilletterie', 'Billetterie');
 
+define('reservation', 'Espace de pré-réservation');
 
+define('infoperso', 'Vos informations personnelles');
+
+define('renseignement', 'Veuillez renseigner votre <couleur>nom</couleur>, <couleur>prénom</couleur>, <couleur>date de naisance</couleur> et votre <couleur>email</couleur>. Un mail de confirmation vous sera envoyé.');
+
+define('prereservation', 'La pré-réservation');
+
+define('nbplaces', 'Nombres de places que vous souhaitez prendre ? ');
+
+define('jourvenir', 'Quel(s) jour(s) souhaitez-vous venir? ');
 
 ?>

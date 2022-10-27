@@ -99,4 +99,20 @@ define('adresse', 'E-mail: artinkevent@gmail.com<br> Telephone: 06.05.23.63.78')
 define('lieux', 'Places: Place du Breuil, 43 000, Le Puy-en-Velay');
 
 define('datescontact', '- Friday 30 June<br>- Saturday 01 July<br>- Sunday 02 July');
+
+/*billetterie*/
+
+define('introbilletterie', 'Ticketing');
+
+define('reservation', 'Pre-booking space');
+
+define('infoperso', 'Your personal information');
+
+define('renseignement', 'Please fill in your last<couleur> name</couleur>, first <couleur>name</couleur>,<couleur> birth date </couleur>and <couleur>email</couleur>. A confirmation email will be sent to you.');
+
+define('prereservation', 'The pre-reservation');
+
+define('nbplaces', 'How many seats do you want to take? ');
+
+define('jourvenir', 'What day(s) would you like to come? ');
 ?>
