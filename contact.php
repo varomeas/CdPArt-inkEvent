@@ -34,6 +34,7 @@
         include('menu.html');
         ?>
       </header>
+
         <!--bannière-->
         <div class="containerBanniere">
           <img src="img/banniere.png" alt="Bannière Art'Ink" id="banniere">
@@ -42,28 +43,29 @@
           </div>
         </div>
 
-        <section>
-            <div class="container">
                 <section class="contact">
               
                         <div class="section-contact">
-                            <p>Adresse mail: artinkevent@gmail.com<br>
-                            Téléphone: 06.05.23.63.78<br>
-                            Dates:<br><br>
-                            - Vendredi 30 Juin<br>
-                            - Samedi 01 Juillet<br>
-                            - Dimanche 02 Juillet<br><br>
-                            Lieux: Place du Breuil, 43 000, Le Puy-en-Velay
-                            </p>
+                            <div class="adresse">
+                              <p>Adresse mail: artinkevent@gmail.com<br>
+                              Téléphone: 06.05.23.63.78</p>
+                              <p>Lieux: Place du Breuil, 43 000, Le Puy-en-Velay</p>
+                            </div>
+                            <div class="dates">
+                              <p>Dates:</p>
+                              <p> - Vendredi 30 Juin<br>
+                              - Samedi 01 Juillet<br>
+                              - Dimanche 02 Juillet</p>
+                          </div>
                         </div>
     
-                        <div  class="divMap">
+                       
+                </section>
+          <div  class="divMap">
                             <div id="map" class="mapContainer"></div>
                         </div>
                     
-                </section>
-            </div>
-        </section>
+    
 
       <footer>
         <?php
