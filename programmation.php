@@ -6,12 +6,12 @@
     <title>Programmation</title>
 
     <!-- Favicons -->
-  <link href="img/favicon.png" rel="icon">
+    <link href="img/logos/favicon.png" rel="icon">
   <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Main Stylesheet File -->
   <link href="style/style.css" rel="stylesheet">
-  <link href="style-menu-footer.css" rel="stylesheet">
+  <link rel="stylesheet" href="style/style-menu-footer.css">
   </head>
 
 <body>
@@ -24,7 +24,7 @@
   <div class="containerBanniere">
             <img src="img/banniere.png" alt="Bannière Art'Ink" id="banniere">
                 <div class="texteBanniere">
-                        <p>programmation</p>
+                        <p>Programmation</p>
                     </div>
         </div>
     <section id="prog" class="programmation">
@@ -86,7 +86,7 @@
                 <div class="time"><time>21:00 - 23:00</time>
                 </div>
                 <div class="texte">
-                  <h4>Concert <span>Ingalawash</span></h4>
+                  <h4>Concert,<span> Ingalawash</span></h4>
                   <p>Groupe de rock originaire du Puy-en-Velay est composé de cinq musiciens liés par une solide amitié. Le groupe rock même en patois pour montrer l'amour qu'il prote à ses origines. 
                   </p>
                 </div>
@@ -94,7 +94,10 @@
   
             </div>
             <!-- Fin du jour 1 -->
-  
+
+            <!-- barre de séparation -->
+            <hr noshade width="400" size="3" align="center" color="black">
+
             <!-- Jour 2 -->
   
             <div role="tabpanel" class="container-j2" id="day-2">
@@ -118,7 +121,7 @@
                   <div class="time"><time>14:00 - 16:00</time>
                   </div>
                   <div class="texte">
-                    <h4>Atelier dessin<span>Lucile Filhol</span></h4>
+                    <h4>Atelier dessin,<span> Lucile Filhol</span></h4>
                     <p>Illustratrice originaire du Puy-en-Velay qui sera présente pour donner des cours et des conseils de dessins. </p>
                   </div>
               </div>
@@ -130,7 +133,7 @@
                 <div class="time"><time>16:00 - 19:00</time>
                 </div>
                 <div class="texte">
-                  <h4>Spectacle de suspending<span>Veg Silencio et sa troupe Endorphins Rising</span></h4>
+                  <h4>Spectacle de suspending,<span> Veg Silencio et sa troupe Endorphins Rising</span></h4>
                   <p>Le suspending est une pratique de modification corporelle permettant via des crochets fixés par piercing de suspendre un corps. Ces piercings sont installés peu de temps avant de réaliser la suspension et sont retirés par la suite.<br>
                   La troupe Endorphins Rising souhaite faire découvrir cette pratique originale et permettre aux spectateurs qui seraient curieux, d'essayer après le spectacle le suspending.</p>
                 </div>
@@ -143,13 +146,16 @@
                 <div class="time"><time>22:00 - 00:30</time>
                 </div>
                 <div class="texte">
-                  <h4>Concert <span>Gojira </span></h4>
+                  <h4>Concert,<span> Gojira</span></h4>
                   <p>Gojira est un groupe de death metal français, originaire d'Ondres. Il est initialement formé en 1996 sous le nom de Godzilla, puis adopte le nom de Gojira en 2001. Le groupe est composé de quatre membres</p>
                 </div>
               </div>
   
             </div>
             <!-- Fin jour 2 -->
+
+            <!-- barre de séparation -->
+            <hr noshade width="400" size="3" align="center" color="black">
   
             <!-- Jour 3 -->
   
@@ -192,6 +198,9 @@
               </div>
             </div>
             <!-- Fin jour 3 -->
+
+            <!-- barre de séparation -->
+            <hr noshade width="400" size="3" align="center" color="black">
   
           </div>
         </div>
@@ -206,7 +215,7 @@
           <h2>Plan du salon</h2>
         </div>   
         <div class="image-plan">
-          <img src="img/plansalon.png">
+          <img src="img/plansalon.png" width="800px">
         </div>
       </section>
 

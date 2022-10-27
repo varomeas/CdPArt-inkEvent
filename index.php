@@ -6,15 +6,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Accueil Art'ink Tattoo</title>
         <link rel="stylesheet" href="style/style.css">
-        <link rel="stylesheet" href="style-menu-footer.css">
+        <link rel="stylesheet" href="style/style-menu-footer.css">
+        <link href="img/logos/favicon.png" rel="icon">
     </head>
+    
 <body>
-    <header>
+    
 <!--menu-->
+    <header>
         <?php
     include("menu.html")
         ?>
     </header>
+
 <!--bannière-->
         <div class="containerBanniere">
             <img src="img/banniere.png" alt="Bannière Art'Ink" id="banniere">
@@ -23,16 +27,19 @@
                 <p>- Place du breuil -</p>
             </div>
         </div>
-    <!--introduction-->
-        <div>
-            <h2 class="textCentre"> Le Salon rassemble des tatoueurs de différentes origines : Anglais, Belges, allemands de toute l'Europe.</h2>
-            <h2 class="textCentre">Afin de vous faire découvrir la culture du tatouage et vous tatouer sur place, réservez votre week-end du 30, 1 & 2 juillet 2022 </h2>
+
+<!--introduction-->
+        <div class="textCentre">
+            <h2> Le Salon rassemble des tatoueurs de différentes origines : Anglais, Belges, allemands de toute l'Europe.<br>
+            Afin de vous faire découvrir la culture du tatouage et vous tatouer sur place, réservez votre week-end du 30, 1 & 2 juillet 2022 </h2>
         </div>
-    <!--bouton billeterie-->
+
+<!--bouton billeterie-->
         <div id="containerBouton">
-            <a href="billeterie.html"><button><span>Billeterie</span></button></a>
+            <a href="billetterie.php"><button><span>Billetterie</span></button></a>
         </div>
-    <!--icone activités-->
+        
+<!--icone activités-->
         <div class="flexActivites">
             <article>
                 <img src="img/icones/stand.png" width="80vw" alt="Image1">
@@ -51,30 +58,36 @@
                 <p>1 dessinatrice </p>
             </article>
         </div>
+
     <!--texte présentation des activités-->
-        <section>
+        <section class="festivite">
             <h2> 3 jours de festivités</h2>
-            <h3 class="prog">Au programme : tatoueurs, perceurs, spending, concert et bien plus encore... </h3>
+            <p>Au programme : tatoueurs, perceurs, spending, concert et bien plus encore... <br>
+            Comme le stand de nouvelle technologie dans lequelle vous pourrez tester vos percings et tatouages<br>
+            avant de vous les faire grâce à un scanner qui vous les projectera sur le corps.</p>
         </section>
-        <h3 class="prog">Comme le stand de nouvelle technologie dans lequelle vous pourrez tester vos percings et tatouages
-        </h3>
-        <h3 class="prog"> avant de vous les faire grâce à un scanner qui vous les projectera sur le corps.</h3>
+        
     <!--texte présentation suspending-->
-        <section>
+        <section class="suspend">
             <h2>Mais qu’est ce que le suspending ?</h2>
-            <h3 id="textSpending">DES CROCHETS DANS LA PEAU ? L'ART DÉLICAT DE LA SUSPENSION</h3>
-            <img src="img/suspending.png" alt="suspending" width=900px>
-            <h4>Entre le tatouage et le piercing, la modification corporelle, se trouve une pratique qui marque le
+            <h4>DES CROCHETS DANS LA PEAU ?<couleur> L'ART DÉLICAT DE LA SUSPENSION</couleur></h4>
+            <img src="img/suspending.png" width=900px>
+            <p>Entre le tatouage et le piercing, la modification corporelle, se trouve une pratique qui marque le
                 corps<br>temporairement, qui perce le corps, temporairement, et qui modifie le corps. En revanche, elle
                 frappe l'esprit pour longtemps.<br> On parle ici de la suspension corporelle. Si vous ne connaissez pas
-                cette discipline on vous invite à venir la découvrir à l'Art'ink Event .</h4>
+                cette discipline on vous invite à venir la découvrir à l'Art'ink Event .</p>
         </section>
+
     <!--texte présentation des concerts-->
-        <div>
-            <h2 id="textConcert">Concerts de Ingalawash & Gojira</h2>
+        <section class="textConcert">
+            <h2>Concerts de <couleur>Ingalawash</couleur> &<couleur> Gojira</couleur></h2>
             <img src="img/concert.png" alt="Image d'un concert" width=1200px >
-        </div>
+        </section>
+
     <!--footer-->
-    <?php include("footer.html")?>
+    <footer>
+        <?php include("footer.html")?>
+    </footer>
+
 </body>
 </html>
