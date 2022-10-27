@@ -141,12 +141,9 @@ width: 100%;
   line-height: 2vw;
   }
 
-
 .suspend{
 text-align: center;
 }
-
-
 
 .suspend couleur{
   color: #ffe246;
@@ -154,22 +151,59 @@ text-align: center;
 
 .suspend p{
   font-family: Arial, Helvetica, sans-serif;
-  
   margin-bottom: 5vw;
   line-height: 2vw;
 }
   
-
 /*titre concerts*/
-
-
 .textConcert couleur{
   color: #ffe246;
 }
 
+/*//////////////Media ACCUEIL////////////*/
+@media screen and (max-width: 750px){
+  .texteBanniere p{
+    font-size: large;
+  }
 
+  h2{
+    font-size: medium;
+    line-height: 3.5vw;
+  }
 
+  .button-day button a{
+    font-size:smaller;
+  }
 
+  .flexActivites img{
+    width: 60px;
+    margin-left: 6vw;
+  }
+  .flexActivites p{
+    font-size:small;
+    margin-left: 3vw;
+  }
+
+  .flexActivites{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .festivite p{
+    font-size: smaller;
+    line-height: 3.5vw;
+  }
+
+  h4{
+    font-size: small;
+    line-height: 3.5vw;
+  }
+
+  .suspend p{
+    font-size: smaller;
+    line-height: 3.5vw;
+  }
+}
 
 /*///////////////////////////////////CREATEURS///////////////////////////////*/
 .h1-crea{
@@ -212,6 +246,15 @@ text-align: center;
 .img-crea{
   display: flex;
   justify-content: center;
+}
+
+/*//////////////Media CREATEURS////////////*/
+@media screen and (max-width: 750px){
+  .img-crea{
+    align-items: center;
+    display: flex;
+      flex-direction: column;
+  }
 }
 /*////////////////////////////////////////PAGE BIO//////////////////////////////////*/
 .h2-bio{
@@ -265,6 +308,27 @@ button:hover{
 
 button a:hover{
   color: #ffe246;
+}
+
+/*///////////////////Media BIO////////////////*/
+@media screen and (max-width: 750px){
+  .pBio{
+      font-size: smaller;
+      line-height: 3vw;
+      text-align: center;
+  }
+
+  .container-bio {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin-bottom: 7vw;
+  }
+
+  .h1-crea , .h2-crea{
+      font-size:medium;
+      margin-top: 7vw;
+  }
 }
 
 /*//////////////////////////////////////////////// PROGRAMME //////////////////////////////////////////*/
@@ -344,6 +408,53 @@ button a:hover{
   margin-bottom: 3vw;
 }
 
+/*////////////////Media PROGRAMME///////////////////////*/
+@media screen and (max-width: 700px){
+  .programmation{
+      flex-direction: column;
+  }
+ .texteBanniere{
+  font-size:x-large;
+ }
+  .titre_prog{
+    line-height: 5vw;
+    font-size:medium;
+  }
+
+  .texte h4{
+      line-height: 5vw;
+      font-size:smaller;
+  }
+
+  .time{
+  font-size:smaller;
+}
+
+  .button-day button a{
+    font-size:smaller;
+}
+  .icone img{
+    width: 80px;
+  }
+
+  .artiste img{
+    width: 100px;
+  }
+
+  .plan h2{
+    line-height: 5vw;
+    font-size:medium;
+}
+
+  .image-plan{
+  display: flex;
+  justify-content: center;
+}
+  .image-plan img{
+  width: 90%;
+}
+}
+
 
 /*/////////////////////////////////////////////Billeterie////////////////////////////////////////////////*/
 fieldset {
@@ -351,8 +462,6 @@ fieldset {
   border:1px none;
   border-radius: 1.9vw; 
 }
-
-
 
 /*motif formulaire*/
 form{
@@ -363,7 +472,12 @@ form{
   box-shadow: 3px 11px 21px -12px #000;
   padding:50px 50px;
   position: relative;
-  left: 17%;
+  
+ }
+
+ .fild{
+  display: flex;
+  justify-content: center;
  }
 
 /*titre pré-reservation*/
@@ -391,6 +505,7 @@ input{
   background:none;
   border:0;
   border-bottom:2px solid #bebed2;
+  
 }
 
 /*container de dates de reservation*/
@@ -411,30 +526,18 @@ input{
   font-size: 12px;
 }
 
-/*Media*/
-@media screen and (max-width: 750px){
-  .pBio{
-      font-size: smaller;
-      line-height: 3vw;
+/*/////media BILLETTERIE//////*/
+@media screen and (max-width: 700px){
+  .fild{
+    display: flex;
+    justify-content: center;
   }
 
-  .container-bio {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-  }
-
-  .h1-crea , .h2-crea{
-      font-size:medium;
-      margin-top: 7vw;
-  }
-
-  .img-crea{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+  form{
+    font-size: small;
   }
 }
+
 /*////////////////////////////////////////////////////CONTACT //////////////////////////////////////////*/
 .contact {
   display: flex;
@@ -456,12 +559,6 @@ input{
   width: 50%;
 }
 
-@media screen and (max-width: 700px){
-  .section-contact p{
-    font-size:smaller;
-  }
-}
-
 /*///////CARTE INTERACTIVE DANS CONTACT ///////*/
 .divMap {
   display: flex;
@@ -476,7 +573,21 @@ input{
   margin-top: 3vw;
 }
 
+/*///////////////////media CONTACT//////////*/
+@media screen and (max-width: 700px){
+  .section-contact p{
+    font-size:smaller;
+  }
+}
 
+/*/////////////////////////////////////scroll fleche//////////////////////////////////////*/
+#scroll_to_top img{
+  width: 2vw;
+}
 
-
+#scroll_to_top{
+  display: flex;
+  justify-content: end;
+  margin-right: 2vw;
+}
 

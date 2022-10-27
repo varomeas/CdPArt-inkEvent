@@ -61,21 +61,46 @@ button:hover{
 .texte-footer{
     font-family: helvetica;
     font-size:smaller;
+    line-height: 1.5vw;
+    
+}
+
+.texte-footer a{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.texte-footer a:hover{
+    color: #ffe246;
 }
 
 
-/*Media*/
+/*////////////Media////////////////////////*/
 @media screen and (max-width: 700px){
+    /*MENU*/
     .nav-menu{
         flex-direction: column;
     }
 
     li{
         line-height: 5vw;
+        font-size: small;
     }
 
+    .nav-menu img{
+        width: 30vw;
+    }
+
+    /*FOOTER*/
     .container-footer{
-        flex-direction: column;
+        flex-direction: column; 
+    }
+
+    .texte-footer{
+        text-align: center;
+        line-height: 4vw;
     }
 
 }
