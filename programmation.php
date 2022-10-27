@@ -220,6 +220,10 @@
         </div>
       </section>
 
+      <div id="scroll_to_top">
+        <a href="#top"><img src="img/icones/fleche.png" alt="Retourner en haut" /></a>
+      </div>
+
       <footer>
         <?php
         include('footer.html');

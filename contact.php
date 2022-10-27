@@ -45,26 +45,26 @@
           </div>
         </div>
 
-                <section class="contact">
-              
-                        <div class="section-contact">
-                            <div class="adresse">
-                              <p><?php echo adresse;?></p>
-                              <p><?php echo lieux;?></p>
-                            </div>
-                            <div class="dates">
-                              <p>Dates:</p>
-                              <p><?php echo datescontact;?></p>
-                          </div>
-                        </div>
-    
-                       
-                </section>
-          <div  class="divMap">
-                            <div id="map" class="mapContainer"></div>
-                        </div>
+        <section class="contact">
+          <div class="section-contact">
+            <div class="adresse">
+              <p><?php echo adresse;?></p>
+              <p><?php echo lieux;?></p>
+            </div>
+            <div class="dates">
+              <p>Dates:</p>
+              <p><?php echo datescontact;?></p>
+            </div>
+          </div> 
+        </section>
+
+        <div  class="divMap">
+          <div id="map" class="mapContainer"></div>
+        </div>
                     
-    
+        <div id="scroll_to_top">
+          <a href="#top"><img src="img/icones/fleche.png" alt="Retourner en haut" /></a>
+        </div>
 
       <footer>
         <?php
