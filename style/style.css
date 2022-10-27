@@ -45,25 +45,31 @@ width: 100%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  
+}
+
+/*texte en couleur*/
+.texteBanniere couleur{
+  color: #ffe246;
 }
 
 /*intro texte*/
-.textCentre{
+.textCentre h2{
   text-align: center;
   font-family: Helvetica, sans-serif;
-  width: 60vw;
-  padding-top: 15px;
+  line-height: 3vw;
+  margin: 5vw 18vw 3vw;
   }
 
 /*bouton billetreie sous intro*/
 #containerBouton {
   display: flex;
   justify-content: center;
-  margin-top: 15px;
-  padding: 30px;
+  margin-top: 3vw;
+  margin-bottom: 5vw;
 }
 
-button {
+#containerBouton button {
   background-color: #ffe246;
   border-radius: 0.9vw;
   border-style: none;
@@ -80,12 +86,12 @@ button {
   font-family: "Druk";
  
 }
-button span {
+#containerBouton button span {
   display: inline-block;
   position: relative;
   transition: 0.9s;
 }
-button span:after {
+#containerBouton button span:after {
   content: "\00bb";
   position: absolute;
   opacity: 0;
@@ -93,14 +99,14 @@ button span:after {
   right: -20px;
   transition: 0.9s;
 }
-button:hover {
+#containerBouton button:hover {
   background-color: #000000;
   color: #ffe246;
 }
-button:hover span {
+#containerBouton button:hover span {
   padding-right: 25px;
 }
-button:hover span:after {
+#containerBouton button:hover span:after {
   opacity: 1;
   right: 0;
 }
@@ -115,50 +121,60 @@ button:hover span:after {
     justify-content: space-around;
 }
 
-
 .flexActivites{
     display: flex;
     flex-wrap: wrap;
     justify-content:space-evenly;
     background-color: #e4e4e4;
-}
-
-
-article > p{
-  z-index: 1;
-  text-align: center;
-  color: rgb(53, 43, 43);
-  font-weight: bold;
-
-}
-
-article > img{
-  text-align: center;
+    padding: 2.5vw;
 }
 
 /*règlage titre*/
-section > h2{
+.festivite{
+  margin-top: 3vw;
+  margin-bottom: 5vw;
   text-align: center;
 }
 
-section > h3 > .prog{
-  text-align: center;
+.festivite p{
   font-family: Helvetica, sans-serif;
+  line-height: 2vw;
   }
 
-section > h4{
+
+.suspend{
 text-align: center;
 }
-  
-/*titre suspending*/
-#textSpending{
+
+.suspend h4{
+  margin-bottom: -5vw;
+}
+
+.suspend couleur{
   color: #ffe246;
 }
 
+.suspend p{
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: -5vw;
+  margin-bottom: 5vw;
+  line-height: 2vw;
+}
+  
+
 /*titre concerts*/
-#textConcert{
-  color: #ffe246;
+.textConcert h2{
   text-align: center;
+  margin-bottom: -13vw;
+}
+
+.textConcert couleur{
+  color: #ffe246;
+}
+
+.textConcert img{
+  display: flex;
+  justify-content: center;
 }
 
 
@@ -244,50 +260,72 @@ button a:hover{
   color: #ffe246;
 }
 
-/*////////////////////////////////////////////////programme//////////////////////////////////////////*/
+/*//////////////////////////////////////////////// PROGRAMME //////////////////////////////////////////*/
 .titre_prog{
   text-align: center;
   font-size: 30px;
+  margin-top: 4vw;
 }
 
 .button-day{
   text-align: center;
-}
-
-/*///IMAGE PROG///*/
-.icone img{
-  width: 110px;
-}
-.artiste img{
-  width: 150px;
-}
-
-.texte {
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 0vw 0vw;
-  width: 33%;
-}
-
-.time{
-  width: 33%;
-}
-
-.artiste{
-  width: 33%;
-
+  margin-top: 4vw;
 }
 
 .row-prog{
   display: flex;
   justify-content: space-around;
-  align-items: center ;
-  margin-top: 7vw;
-  background-color: blue;
-  
-
+  align-items: center;
+  margin: 7vw 2vw 7vw 2vw;
 }
 
-/*/////PLAN SALON//////*/
+/*/CLASS TEXTE/*/
+.texte {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 60%;
+  padding-right: 4vw;
+  text-align: justify;
+}
+
+.texte span{
+  color: #ffe246;
+  font-family: "druck";
+}
+
+.texte h4{
+  font-family: "druck";
+  
+}
+
+/*/ CLASS TIME /*/
+.time{
+  width: 16%;
+  margin-right: 1vw;
+  padding: 3vw;
+}
+
+/*/ CLASS ARTISTE /*/
+.artiste{
+  width: 24%;
+  margin-right: 1vw;
+  text-align: end;
+}
+
+.artiste img{
+  width: 150px;
+}
+/*/ CLASS ICONE /*/
+.icone{
+  width: 25%;
+  margin-right: 1vw;
+  text-align: end;
+}
+
+.icone img{
+  width: 110px;
+}
+
+/*/PLAN SALON/*/
 .plan-du-salon{
   display: flex;
   align-items: center;
@@ -307,10 +345,7 @@ fieldset {
   border-radius: 1.9vw; 
 }
 
-/*texte en couleur*/
-couleur{
-  color: #ccb323;
-}
+
 
 /*motif formulaire*/
 form{
@@ -325,6 +360,12 @@ form{
  }
 
 /*titre pré-reservation*/
+
+.pre-resa{
+  text-align: center;
+  margin-top: 4vw;
+  margin-bottom: 3vw;
+}
 #reserve{
 margin-top: 20px;
 text-align: center;

@@ -6,7 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <link rel="stylesheet" href="style/style.css">
-        <link rel="stylesheet" href="style-menu-footer.css">
+        <link rel="stylesheet" href="style/style-menu-footer.css">
+        <link href="img/logos/favicon.png" rel="icon">
     </head>
 <body>
 <!--menu-->
@@ -17,11 +18,11 @@
     <div class="containerBanniere">
             <img src="img/banniere.png" alt="Bannière Art'Ink" id="banniere">
             <div class="texteBanniere">
-                  <p>Billeterie</p>
+                  <p>Billetterie</p>
             </div>
     </div>
 <!--titre-->
-        <h2>Espace de pré-réservation</h2>
+        <h2 class="pre-resa">Espace de pré-réservation</h2>
 <!--formulaire-->
         <fieldset>
             <form action="" method="post">

@@ -21,11 +21,11 @@ $j=11;
     <head>
         <title>Créateurs</title>
         <link rel="stylesheet" href="style/style.css"/>
-        <link rel="stylesheet" href="style-menu-footer.css"/>
+        <link rel="stylesheet" href="style/style-menu-footer.css">
         <meta charset="utf-8">
 
         <!-- Favicons -->
-        <link href="img/favicon.png" rel="icon">
+        <link href="img/logos/favicon.png" rel="icon">
         <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
     </head>
         <body>

@@ -5,6 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="img/logos/favicon.png" rel="icon">
 
         <title>Contact</title>
     
@@ -14,7 +15,7 @@
       
         <!-- Main Stylesheet File -->
         <link href="style/style.css" rel="stylesheet">
-        <link href="style-menu-footer.css" rel="stylesheet">
+        <link rel="stylesheet" href="style/style-menu-footer.css">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.1/dist/leaflet.css" 
           integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
         crossorigin=""/>
