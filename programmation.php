@@ -1,4 +1,7 @@
+<?php include("lang.php");?>
+
 <!DOCTYPE html>
+<html lang="<?php echo $lang;?>">
 <html lang="fr">
 
   <head>
@@ -24,20 +27,19 @@
   <div class="containerBanniere">
             <img src="img/banniere.png" alt="Bannière Art'Ink" id="banniere">
                 <div class="texteBanniere">
-                        <p>Programmation</p>
+                        <p><?php echo titrepageprog;?></p>
                     </div>
         </div>
     <section id="prog" class="programmation">
         <div class="intro">
           <div class="section-intro">
-            <p class="titre_prog">Programmation du salon Art’Ink Event<br>
-            Du 30 Juin 2023 au 02 Juillet 2023</p>
+            <p class="titre_prog"><?php echo introprog;?></p>
           </div>
  
           <div class="button-day">
-            <button><a href="#day-1">VEN 30 JUIN</a></button>
-            <button><a href="#day-2">SAM 01 JUILLET</a></button>
-            <button><a href="#day-3">DIM 02 JUILLET</a></button>
+            <button><a href="#day-1"><?php echo dateun;?></a></button>
+            <button><a href="#day-2"><?php echo datedeux;?></a></button>
+            <button><a href="#day-3"><?php echo datetrois;?></a></button>
           </div>
 
 
@@ -52,8 +54,8 @@
                   </div>
                   <div class="time"><time>13:00 - 14:00</time></div>
                   <div class="texte">
-                    <h4>Présentation des candidats pour le concours</h4>
-                    <p>Présentation de tout les candidats, de leur spécialité de tatouage et quel pays ils représentent</p>
+                    <h4><?php echo pctitre;?></h4>
+                    <p><?php echo pcsoustitre;?></p>
                   </div>
               </div>
   
@@ -63,8 +65,8 @@
                 </div>
                 <div class="time"><time>14:00 - 15:00</time></div>
                 <div class="texte">
-                  <h4>Présentation du Jury</h4>
-                  <p>Des tatoueurs reconnu pour leurs talents seront présent pour élire les meilleurs tatoueurs du concours</p>
+                  <h4><?php echo pjtitre;?></h4>
+                  <p><?php echo pjsoustitre;?></p>
                 </div>
               </div>
   
@@ -74,8 +76,8 @@
                 </div>
                 <div class="time"><time>15:00 - 20:00</time></div>
                 <div class="texte">
-                  <h4>Ouverture des stands</h4>
-                  <p>Divers stands seront ouvert afin de pouvoir faire des tatouages éphémères, du heiné, des piercings, des tatouages...</p>
+                  <h4><?php echo ouvstands;?></h4>
+                  <p><?php echo sousouvstands;?></p>
                 </div>
               </div>
   
@@ -87,8 +89,7 @@
                 </div>
                 <div class="texte">
                   <h4>Concert,<span> Ingalawash</span></h4>
-                  <p>Groupe de rock originaire du Puy-en-Velay est composé de cinq musiciens liés par une solide amitié. Le groupe rock même en patois pour montrer l'amour qu'il prote à ses origines. 
-                  </p>
+                  <p><?php echo presentconcert;?></p>
                 </div>
               </div>
   
@@ -109,8 +110,8 @@
                   <div class="time"><time>10:00 - 20:00</time>
                   </div>
                   <div class="texte">
-                    <h4>Ouverture des stands</h4>
-                    <p>Tatouages, piercings, tatouage éphémère, heiné...</p>
+                    <h4><?php echo ouvstands;?></h4>
+                    <p><?php echo sousouvstands;?></p>
                   </div>
               </div>
   
@@ -121,8 +122,8 @@
                   <div class="time"><time>14:00 - 16:00</time>
                   </div>
                   <div class="texte">
-                    <h4>Atelier dessin,<span> Lucile Filhol</span></h4>
-                    <p>Illustratrice originaire du Puy-en-Velay qui sera présente pour donner des cours et des conseils de dessins. </p>
+                    <h4><?php echo atelierdessin;?></h4>
+                    <p><?php echo sousatelierdessin;?> </p>
                   </div>
               </div>
   
@@ -133,9 +134,8 @@
                 <div class="time"><time>16:00 - 19:00</time>
                 </div>
                 <div class="texte">
-                  <h4>Spectacle de suspending,<span> Veg Silencio et sa troupe Endorphins Rising</span></h4>
-                  <p>Le suspending est une pratique de modification corporelle permettant via des crochets fixés par piercing de suspendre un corps. Ces piercings sont installés peu de temps avant de réaliser la suspension et sont retirés par la suite.<br>
-                  La troupe Endorphins Rising souhaite faire découvrir cette pratique originale et permettre aux spectateurs qui seraient curieux, d'essayer après le spectacle le suspending.</p>
+                  <h4><?php echo spectaclesuspending;?></h4>
+                  <p><?php echo sousspectaclesuspending;?></p>
                 </div>
               </div>
   
@@ -147,7 +147,7 @@
                 </div>
                 <div class="texte">
                   <h4>Concert,<span> Gojira</span></h4>
-                  <p>Gojira est un groupe de death metal français, originaire d'Ondres. Il est initialement formé en 1996 sous le nom de Godzilla, puis adopte le nom de Gojira en 2001. Le groupe est composé de quatre membres</p>
+                  <p><?php echo sousconcertgojira;?></p>
                 </div>
               </div>
   
@@ -168,8 +168,8 @@
                 <div class="time"><time>10:00 - 13:00</time>
                 </div>
                 <div class="texte">
-                  <h4>Ouverture des stands</h4>
-                  <p>Tatouages, piercings, tatouage éphémère, heiné...</p>
+                  <h4><?php echo ouvstands;?></h4>
+                  <p><?php echo sousouvstands;?><p>
                 </div>
               </div>
   
@@ -180,7 +180,8 @@
                 <div class="time"><time>13:00 - 15:00</time>
                 </div>
                 <div class="texte">
-                  <h4>Présentation des gagnants du concours</h4>
+                  <h4><h4><?php echo presentconcours;?></h4>
+                  <p><?php echo souspresentconcours;?><p></h4>
                   <p>Défilé des mannequins qui auront été tatoués puis présentation des gagnants. </p>
                 </div>
               </div>
@@ -192,8 +193,8 @@
                 <div class="time"><time>15:00 - 20:00</time>
                 </div>
                 <div class="texte">
-                  <h4>Ouverture des stands</h4>
-                  <p>Tatouages, piercings, tatouage éphémère, heiné...</p>
+                <h4><?php echo ouvstands;?></h4>
+                  <p><?php echo sousouvstands;?><p>
                 </div>
               </div>
             </div>
@@ -212,7 +213,7 @@
   
       <section class="plan-du-salon">
         <div class="plan">
-          <h2>Plan du salon</h2>
+          <h2><?php echo plansalon;?></h2>
         </div>   
         <div class="image-plan">
           <img src="img/plansalon.png" width="800px">
