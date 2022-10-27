@@ -13,11 +13,11 @@ $lang = $_SESSION["lang"];
 switch($lang) {
     //Si lang=fr on inclut le fichier de langue française
     case 'fr':
-        include('lang/index-fr.php');
+        include('lang/lang-fr.php');
     break;
     //Si lang=en on inclut le fichier de langue anglaise
     case 'en':
-        include('lang/index-en.php');
+        include('lang/lang-en.php');
     break;
 }
 ?>

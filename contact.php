@@ -1,4 +1,6 @@
+<?php include("lang.php");?>
 <!DOCTYPE html>
+<html lang="<?php echo $lang;?>">
 <html lang="fr">
 
     <head>
@@ -47,15 +49,12 @@
               
                         <div class="section-contact">
                             <div class="adresse">
-                              <p>Adresse mail: artinkevent@gmail.com<br>
-                              Téléphone: 06.05.23.63.78</p>
-                              <p>Lieux: Place du Breuil, 43 000, Le Puy-en-Velay</p>
+                              <p><?php echo adresse;?></p>
+                              <p><?php echo lieux;?></p>
                             </div>
                             <div class="dates">
                               <p>Dates:</p>
-                              <p> - Vendredi 30 Juin<br>
-                              - Samedi 01 Juillet<br>
-                              - Dimanche 02 Juillet</p>
+                              <p><?php echo datescontact;?></p>
                           </div>
                         </div>
     
