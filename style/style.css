@@ -161,9 +161,9 @@ text-align: center;
 }
 
 /*//////////////Media ACCUEIL////////////*/
-@media screen and (max-width: 750px){
+@media screen and (max-width: 800px){
   .texteBanniere p{
-    font-size: large;
+    font-size: 0.5em;
   }
 
   h2{
@@ -492,6 +492,9 @@ margin-top: 20px;
 text-align: center;
 }
 
+.blase couleur{
+  color: #ffe246;
+}
 
 #titre_venir{
   margin: 160px;
@@ -590,4 +593,45 @@ input{
   justify-content: end;
   margin-right: 2vw;
 }
+
+
+/*MODE JOUR/NUIT*/
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap');
+
+
+.nuit{
+  background-color: #4a4e69;
+  color: whitesmoke;
+}
+
+body{
+  background-color: var(--bg);
+
+}
+
+button{
+  border:none;
+  outline: none;
+background-color: transparent;
+color:var(--text);
+}
+
+#themeLogo{
+ 
+  font-size:x-large;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+button.button{
+  cursor: pointer;
+  color: #000;
+  transition: all .2s;
+}
+
+button.btn:hover{
+  box-shadow: 0 2px 5px var(--text);
+  color: #e4e4e4;
+}
+
 
