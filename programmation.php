@@ -14,6 +14,7 @@
   <!-- Main Stylesheet File -->
   <link href="style/style.css" rel="stylesheet">
   <link rel="stylesheet" href="style/style-menu-footer.css">
+  <script src="script/script.js"></script>
   </head>
 
 <body>

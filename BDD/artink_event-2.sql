@@ -2,10 +2,10 @@
 -- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
--- Hôte : localhost:8889
--- Généré le : mer. 26 oct. 2022 à 13:00
--- Version du serveur : 5.7.34
--- Version de PHP : 7.4.21
+-- Hôte : 127.0.0.1
+-- Généré le : ven. 28 oct. 2022 à 11:07
+-- Version du serveur : 10.4.22-MariaDB
+-- Version de PHP : 7.4.27
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -63,7 +63,7 @@ INSERT INTO `createurs` (`id_createur`, `nom`, `prenom`, `age`, `bio`, `origine`
 (4, 'Riffard', 'Sandry', 33, 'Sandry Riffard est un tatoueur venant du Puy-En-Velay. A 33 ans, il est un tatoueur incontournable au Puy-En-Velay. Son style gothique et sa patte le rendent spécial et ses clients ne sont pas déçus, c\'est toujours plaisant d\'aller se faire tatouer chez lui.', 'France', 'Tatoueur', 'img/artistes/sandry.jpg'),
 (5, 'Mottin', 'Jean-Pierre', 36, 'Tatoueur liégeois, Jean-Pierre Mottin s\'est fait remarquer lors d\'un précédent Mondial du tatouage de Paris. Sa technique fétiche est le dotwork, ça consiste à créer un motif grâce à des centaines de petits points. Il fait aussi beaucoup de tatouage de style mosaïque.', 'Belgique', 'Tatoueur', 'img/artistes/jpmottin.jpg'),
 (6, 'Bersekov', 'Inal', 33, 'Inal Bersekov vient de Verviers, il est l\'un des plus doué dans le domaine du tatouage hyper réaliste, il a tatoué de nombreuses célébrité comme Steven Defour ou encore Drake. Pour atteindre la perfection de ses tatouages il a du travailler son style durant de nombreuses années.', 'Belgique', 'Tatoueur', 'img/artistes/inal.jpg'),
-(7, 'Machlev', 'Chaim', 35, 'Chaim Machlev est un tatoueur localisé à Berlin, sont style se traduit par des formes abstraites et de fresques. C\'est un maitre dans l\'art de la symétrie. De plus, il a des millions de fan qui veulent avoir leur tatouage fait par lui.', 'Allemagne', 'Tatoueur', 'img/artistes/dotslines.jpg'),
+(7, 'Machlev', 'Chaim', 35, 'Chaim Machlev est un tatoueur localisé à Berlin, sont style se traduit par des formes abstraites et de fresques. C\'est un maitre dans l\'art de la symétrie. De plus, il a des millions de fan qui veulent avoir leur tatouage fait par lui.', 'Allemagne', 'Tatoueur', 'img/artistes/dotstolines.jpg'),
 (8, 'Aurisch', 'Peter', 0, 'Peter Aurisch est un tatoueur Berlinois, son esprit très créatif lui permet de rendre ses tatouages assez originaux. Son style graphique et coloré donne de superbes résultats.', 'Allemagne', 'Tatoueur', 'img/artistes/peter.jpg'),
 (9, 'Filhol', 'Lucile', 24, 'Cette jeune artiste cantalienne à laissé tomber ses études en design graphique à Lyon pour se consacrer au dessin. Elle est tombée amoureuse de la ville du Puy en Velay depuis son plus jeune âge et aujourd\'hui, elle croque la ville à travers ses oeuvres originales qu\'elle partage et qu\'elle vend via les réseaux sociaux, sous le nom \"Ma vie de Lune\"', 'Française ', 'Dessinatrice', 'img/artistes/lucile.jpg'),
 (10, 'Chevalier', 'Lou', 22, 'Jeune perceuse du Puy en Velay, Lou travaille dans un petit studio. Le sérieux de sa pratique a été reconnu par la fidélité de ses clients.', 'Française', 'Perceuse', 'img/artistes/maviedereve.jpg'),
@@ -76,7 +76,7 @@ INSERT INTO `createurs` (`id_createur`, `nom`, `prenom`, `age`, `bio`, `origine`
 --
 
 CREATE TABLE `participent` (
-  `creneaux` int(11) DEFAULT NULL,
+  `creneaux` varchar(11) DEFAULT NULL,
   `id_periode` int(11) NOT NULL,
   `id_createur` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -96,6 +96,17 @@ INSERT INTO `participent` (`creneaux`, `id_periode`, `id_createur`) VALUES
 (NULL, 1, 8),
 (NULL, 1, 10),
 (NULL, 1, 11),
+(NULL, 2, 1),
+(NULL, 2, 2),
+(NULL, 2, 3),
+(NULL, 2, 4),
+(NULL, 2, 5),
+(NULL, 2, 6),
+(NULL, 2, 7),
+(NULL, 2, 8),
+('14h-16h', 2, 9),
+(NULL, 2, 10),
+(NULL, 2, 11),
 (NULL, 3, 1),
 (NULL, 3, 2),
 (NULL, 3, 3),
@@ -105,18 +116,7 @@ INSERT INTO `participent` (`creneaux`, `id_periode`, `id_createur`) VALUES
 (NULL, 3, 7),
 (NULL, 3, 8),
 (NULL, 3, 10),
-(NULL, 3, 11),
-(NULL, 4, 9),
-(NULL, 7, 1),
-(NULL, 7, 2),
-(NULL, 7, 3),
-(NULL, 7, 4),
-(NULL, 7, 5),
-(NULL, 7, 6),
-(NULL, 7, 7),
-(NULL, 7, 8),
-(NULL, 7, 10),
-(NULL, 7, 11);
+(NULL, 3, 11);
 
 -- --------------------------------------------------------
 
@@ -137,13 +137,8 @@ CREATE TABLE `periode` (
 
 INSERT INTO `periode` (`id_periode`, `jour`, `horaire_debut`, `horaire_fin`) VALUES
 (1, '2023-06-30', '13:00:00', '20:00:00'),
-(2, '2023-06-30', '21:00:00', '23:00:00'),
-(3, '2023-07-01', '10:00:00', '20:00:00'),
-(4, '2023-07-01', '14:00:00', '16:00:00'),
-(5, '2023-07-01', '16:00:00', '17:00:00'),
-(6, '2023-07-01', '22:00:00', '23:59:00'),
-(7, '2023-07-02', '10:00:00', '20:00:00'),
-(8, '2023-07-02', '13:00:00', '18:00:00');
+(2, '2023-07-01', '10:00:00', '20:00:00'),
+(3, '2023-07-02', '10:00:00', '20:00:00');
 
 -- --------------------------------------------------------
 

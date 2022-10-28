@@ -27,6 +27,7 @@
         integrity="sha256-NDI0K41gVbWqfkkaHj15IzU7PtMoelkzyKp8TOaFQ3s="
         crossorigin="">
     </script>
+    <script src="script/script.js"></script>
     </head>
 
   <body>

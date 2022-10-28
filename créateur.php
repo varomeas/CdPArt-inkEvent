@@ -3,15 +3,15 @@
 <?php
 //requetes envoyees a la bdd
 
-$bdd=new PDO('mysql:host=localhost;port=3306;dbname=artink_event','root','');
+include('connexion/bdd.php');
 $requete='SELECT * FROM createurs';
-$results = $bdd->query($requete);
+$results = $connexion->query($requete);
 $tableau= $results->fetchAll();
 $results->closeCursor();
 $nbjoueur=count($tableau);
 
 $requete='SELECT * FROM createurs' ; 
-$resultat = $bdd->query($requete);
+$resultat = $connexion->query($requete);
 $tab=$resultat->fetchAll();
 $resultat->closeCursor();
 $nbinfo=count($tab);
@@ -29,6 +29,7 @@ $j=11;
         <!-- Favicons -->
         <link href="img/logos/favicon.png" rel="icon">
         <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+        <script src="script/script.js"></script>
     </head>
         <body>
             <header>

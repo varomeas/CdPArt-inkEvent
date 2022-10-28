@@ -1,5 +1,5 @@
 <?php include("lang.php");
-$connexion = new PDO('mysql:host=localhost;port=3306;dbname=artink_event','root','');
+include("connexion/bdd.php");
 $requete = 'SELECT * from periode';
 $resultat=$connexion->query($requete);
 $tabDates = $resultat->fetchAll();
@@ -18,6 +18,7 @@ $compte = count($tabDates);
         <link rel="stylesheet" href="style/style.css">
         <link rel="stylesheet" href="style/style-menu-footer.css">
         <link href="img/logos/favicon.png" rel="icon">
+        <script src="script/script.js"></script>
     </head>
 <body>
 <!--menu-->
@@ -29,6 +30,14 @@ $compte = count($tabDates);
         <img src="img/banniere.png" alt="Bannière Art'Ink" id="banniere">
         <div class="texteBanniere">
             <p><?php echo introbilletterie;?></p>
+            <?php 
+            $requete5 = 'SELECT sum(nb_places) FROM reservent';
+            $resultat5 = $connexion->query($requete5);
+            $nbClient = $resultat5->fetchAll();
+            $resultat5->closeCursor();
+            $places_restantes = 1000 - $nbClient[0][0];
+            echo 'Il reste <couleur>'.$places_restantes.'</couleur> places disponibles';
+            ?>
         </div>
     </div>
 <!--titre-->
@@ -56,8 +65,7 @@ $compte = count($tabDates);
                     }?>
                 </div>
                 <input type="submit" value="Valider" name="valider"></input>
-            </form>
-            <?php
+                <?php
                 //si le formulaire est validé, création d'une class client qui enregistre les informations et les envoient dans la base de données
                 if(isset($_POST['valider'])){
                     require_once 'classes/client.php';
@@ -75,6 +83,8 @@ $compte = count($tabDates);
                     $client -> compter();
                 }
             ?>
+            </form>
+            
         </fieldset>
     </div>
     <!--Annulation de la pré-réservation si le client le souhaite avec son email-->

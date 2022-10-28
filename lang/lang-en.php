@@ -48,7 +48,7 @@ define('titredessinatrice', 'Artist');
 
 /*page programme*/
 
-define('titrepageprog', 'Programming');
+define('titrepageprog', 'Programme');
 
 define('introprog', 'Art\'Ink Event Programming<br>
 From 30 June 2023 to 02 July 2023');

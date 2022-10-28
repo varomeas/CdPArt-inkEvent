@@ -9,7 +9,7 @@ class billet{
 
     public function __construct($nb){
         $this->nb_places = $nb;
-        $this->connexion = new PDO('mysql:host=localhost;port=8888;dbname=artink_event','root','root');
+        $this->connexion = new PDO('mysql:host=localhost;port=3306;dbname=varomeas_artink','varomeas_artink','ROMEAS-artink2022');
     }
 
     public function calcul(){

@@ -17,7 +17,7 @@ class client{
 		$this->prenom = $p;
 		$this->mail = $m;
 		$this->date_naissance = $a;
-		$this->connexion = new PDO('mysql:host=localhost;port=8888;dbname=artink_event','root','root');
+		$this->connexion = new PDO('mysql:host=localhost;port=3306;dbname=varomeas_artink','varomeas_artink','ROMEAS-artink2022');
 		$this->places = $nb_places;
 		$this->prix = new billet($nb_places);
 		$this->jour = $jour;

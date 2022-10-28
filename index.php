@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="style/style.css">
         <link rel="stylesheet" href="style/style-menu-footer.css">
         <link href="img/logos/favicon.png" rel="icon">
+        <script src="script/script.js"></script>
     </head>
     
 <body>

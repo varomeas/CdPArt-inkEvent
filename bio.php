@@ -1,8 +1,8 @@
 <?php include("lang.php");?>
 <?php
-$bdd=new PDO('mysql:host=localhost;port=3306;dbname=artink_event','root','');
+include('connexion/bdd.php');
 $requete='SELECT * FROM createurs WHERE id_createur = '.$_GET["id"];
-$resultat = $bdd->query($requete);
+$resultat = $connexion->query($requete);
 $tableau=$resultat->fetchAll();
 $resultat->closeCursor();
 ?>
@@ -17,6 +17,7 @@ $resultat->closeCursor();
         <!-- Favicons -->
         <link href="img/logos/favicon.png" rel="icon">
         <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+        <script src="script/script.js"></script>
     </head>
     <body>
         <header>
