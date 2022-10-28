@@ -1,3 +1,4 @@
+<?php include("lang.php");?>
 <?php
 $bdd=new PDO('mysql:host=localhost;port=3306;dbname=artink_event','root','');
 $requete='SELECT * FROM createurs WHERE id_createur = '.$_GET["id"];
@@ -20,7 +21,7 @@ $resultat->closeCursor();
     <body>
         <header>
             <?php
-            include('menu.html');
+            include('menu.php');
             ?>
         </header>
     
@@ -34,11 +35,13 @@ $resultat->closeCursor();
             <button><a href="créateur.php">Retour</a></button> 
         </div>
     </div>
-
-        <footer>
+    <div id="scroll_to_top">
+            <a href="#top"><img src="img/icones/fleche.png" alt="Retourner en haut" /></a>
+    </div>
+<footer>
         <?php
-            include('footer.html');
+            include('footer.php');
             ?>
-        </footer>
+</footer>
     </body>
 </html>

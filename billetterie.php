@@ -1,5 +1,5 @@
 <?php include("lang.php");
-$connexion = new PDO('mysql:host=localhost;port=8888;dbname=artink_event','root','root');
+$connexion = new PDO('mysql:host=localhost;port=3306;dbname=artink_event','root','');
 $requete = 'SELECT * from periode';
 $resultat=$connexion->query($requete);
 $tabDates = $resultat->fetchAll();
@@ -20,10 +20,9 @@ $compte = count($tabDates);
         <link href="img/logos/favicon.png" rel="icon">
     </head>
 <body>
-    <?php session_start()?>
 <!--menu-->
     <header>
-        <?php include("menu.html") ?>
+        <?php include("menu.php") ?>
     </header>
 <!--bannière billeterie-->
     <div class="containerBanniere">
@@ -79,11 +78,11 @@ $compte = count($tabDates);
         </fieldset>
     </div>
     <!--Annulation de la pré-réservation si le client le souhaite avec son email-->
-    <h2 class="pre-resa">Vous souhaitez annuler votre réservation?</h2>
+    <h2 class="pre-resa"><?php echo annuler;?></h2>
     <div class="fild">
         <fieldset>
             <form action="" method="post">
-                <label>Saisissez votre adresse mail</label>
+                <label><?php echo saisir;?></label>
                 <input type="mail" name="mailcompte" placeholder="monmail@exemple.com">
                 <input type="submit" value="valider" name="supprimer">
             </form>
@@ -99,11 +98,11 @@ $compte = count($tabDates);
         </fieldset>
     </div>
     <!--Formulaire de modification des informations de la table createurs-->
-    <h2 class="pre-resa">Vous voulez mettre à jour les informations sur l'un de nos créateurs?</h2>
+    <h2 class="pre-resa"><?php echo miseajour;?></h2>
     <div class="fild">
         <fieldset>
             <form action="" method="post">
-                <label>Selectionnez le créateur pour lequel vous souhaitez modifier les informations</label>
+                <label><?php echo selectcrea;?></label>
                 <select name="id">
                     <?php
                         $requete3 = 'SELECT * from createurs';
@@ -117,13 +116,13 @@ $compte = count($tabDates);
                         }
                     ?>
                 </select></br></br>
-                <label>Entrez son age</label>
+                <label><?php echo age;?></label>
                 <input type="number" name="age" placeholder="age">
-                <label>Entrez sa biographie</label>
+                <label><?php echo bio;?></label>
                 <input type="text" name="bio" placeholder="Biographie">
-                <label>Entrez son métier</label>
+                <label><?php echo metier;?></label>
                 <input type="text" name="metier" placeholder="Son métier">
-                <label>Entrez son pays d'origine</label>
+                <label><?php echo pays;?></label>
                 <input type="text" name="origine" placeholder="Son pays d'origine">
                 <input type="submit" name="modifier" value="modifier">
             </form>
@@ -138,16 +137,12 @@ $compte = count($tabDates);
             ?>
         </fieldset> 
     </div>  
-
-
-
         <div id="scroll_to_top">
             <a href="#top"><img src="img/icones/fleche.png" alt="Retourner en haut" /></a>
         </div>
-
-        <footer>
-        <?php include("footer.html")?>
-        </footer>
+    <footer>
+        <?php include("footer.php")?>
+    </footer>
 </body>
 </html>
         
