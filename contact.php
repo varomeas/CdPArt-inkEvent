@@ -1,7 +1,6 @@
 <?php include("lang.php");?>
 <!DOCTYPE html>
 <html lang="<?php echo $lang;?>">
-<html lang="fr">
 
     <head>
         <meta charset="utf-8">
@@ -33,7 +32,7 @@
   <body>
     <header>
         <?php
-        include('menu.html');
+        include('menu.php');
         ?>
       </header>
 
@@ -68,7 +67,7 @@
 
       <footer>
         <?php
-        include('footer.html');
+        include('footer.php');
         ?>
       </footer>
 

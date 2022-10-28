@@ -1,5 +1,8 @@
 <?php
 /*page index*/
+
+define('titreun', 'Salon du tatouage du Puy-en-Velay le ');
+
 define('intro', 'Le Salon réunit des tatoueurs de différentes origines : anglais, belge, allemand, de toute l’Europe.Afin de vous faire découvrir la culture du tatouage et vous tatouer sur place place, réservez votre week-end du 30, 1 & 2 juillet 2023');
 
 define('billetterie', 'Billetterie');
@@ -75,6 +78,8 @@ define('sousouvstands', 'Divers stands seront ouvert afin de pouvoir faire des t
 
 define('presentconcert', 'Groupe de rock originaire du Puy-en-Velay est composé de cinq musiciens liés par une solide amitié. Le groupe rock même en patois pour montrer l\'amour qu\'il prote à ses origines.');
 
+define('atelierdessin', 'Atelier de dessin,<span> Lucile Filhol</span>');
+
 define('sousatelierdessin', 'Illustratrice originaire du Puy-en-Velay qui sera présente pour donner des cours et des conseils de dessins.');
 
 define('spectaclesuspending', 'Spectacle de suspending,<span> Veg Silencio et sa troupe Endorphins Rising</span>');
@@ -114,5 +119,35 @@ define('prereservation', 'La pré-réservation');
 define('nbplaces', 'Nombres de places que vous souhaitez prendre ? ');
 
 define('jourvenir', 'Quel(s) jour(s) souhaitez-vous venir? ');
+
+
+define('annuler', 'Vous souhaitez annuler votre réservation?');
+
+define('saisir', 'Saisissez votre adresse mail');
+
+define('selectcrea', 'Selectionnez le créateur pour lequel vous souhaitez modifier les informations');
+
+define('miseajour', 'Vous voulez mettre à jour les informations sur l\'un de nos créateurs?');
+
+define('age', 'Entrez son âge');
+
+define('bio', 'Entrez sa biographie');
+
+define('metier', 'Entrez son métier');
+
+define('pays', 'Entrez son pays d\'origine');
+/*menu*/
+
+define('crea', 'Créateurs');
+
+define('prog', 'Programme');
+
+define('cont', 'Contact');
+
+define('bille', 'Billetterie');
+
+/*footer*/
+
+define('infofooter', 'Vous souhaitez découvrir le nouveau salon du tatouage Artink event?<br>Effectuez une pré-réservation grâce au formulaire dans l’onglet billetterie!');
 
 ?>

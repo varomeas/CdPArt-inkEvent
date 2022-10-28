@@ -1,4 +1,7 @@
 <?php
+
+define('titreun', 'Tattoo salon of the Puy-en-Velay the ');
+
 define('intro', 'The Salon brings together tattoo artists of different origins: English, Belgian, German, from all over Europe.To make you discover the culture of tattooing and tattoo yourself on site, book your weekend of June 30, July 1 & 2, 2023');
 
 define('billetterie', 'Ticketing');
@@ -29,7 +32,7 @@ define('concerts', 'Concerts by <couleur>Ingalawash</couleur> &<couleur> Gojira<
 
 define('titrepagecrea', 'Creators');
 
-define('titretatoo', 'Creators');
+define('titretatoo', 'Tattoo artists');
 
 define('france', 'France');
 
@@ -115,4 +118,34 @@ define('prereservation', 'The pre-reservation');
 define('nbplaces', 'How many seats do you want to take? ');
 
 define('jourvenir', 'What day(s) would you like to come? ');
+
+define('annuler', 'Do you want to cancel your booking?');
+
+define('saisir', 'Enter your email address');
+
+define('selectcrea', 'Select the creator for which you want to change the information');
+
+define('miseajour', 'Want to update information about one of our creators?');
+
+define('age', 'Enter her age');
+
+define('bio', 'Enter his biography');
+
+define('metier', 'Enter his profession');
+
+define('pays', 'Enter your country of origin');
+
+/*menu*/
+
+define('crea', 'Creator');
+
+define('prog', 'Programme');
+
+define('cont', 'Contact');
+
+define('bille', 'Ticketing');
+
+/*footer*/
+
+define('infofooter', 'Would you like to discover the new Artink event tattoo salon?<br> <br>Make a pre-booking using the form in the ticketing tab!');
 ?>

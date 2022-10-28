@@ -33,7 +33,7 @@ $j=11;
         <body>
             <header>
                 <?php
-                include('menu.html');
+                include('menu.php');
                 ?>
             </header>
 <!--bannière-->
@@ -111,9 +111,12 @@ $j=11;
     }
     echo '</div>';
 ?>
+        <div id="scroll_to_top">
+            <a href="#top"><img src="img/icones/fleche.png" alt="Retourner en haut" /></a>
+        </div>
         <footer>
             <?php
-            include('footer.html');
+            include('footer.php');
             ?>
         </footer>
 

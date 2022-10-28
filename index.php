@@ -17,14 +17,15 @@
     
 <!--menu-->
     <header>
-        <?php include("menu.html")?>
+        
+        <?php include("menu.php");?>
     </header>
 
 <!--bannière-->
         <div class="containerBanniere">
             <img src="img/banniere.png" alt="Bannière Art'Ink" id="banniere">
             <div class="texteBanniere">
-                <p>Salon du tatouage du Puy-en-Velay le <couleur> 30, 1 & 2 juillet 2022</couleur></p>
+                <p><?php echo titreun;?><couleur> 30, 1 & 2 juillet 2022</couleur></p>
                 <p>- Place du Breuil -</p>
             </div>
         </div>
@@ -83,7 +84,7 @@
         </div>
     <!--footer-->
     <footer>
-        <?php include("footer.html")?>
+        <?php include("footer.php")?>
     </footer>
 
 </body>
