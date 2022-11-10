@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html lang="<?php echo $lang;?>">
 
                 <nav class="nav">
                     <ul class="nav-menu">

@@ -12,6 +12,7 @@ body{
 
 /*///////////////////////////////////////Accueil////////////////////////////////*/
 /*image menu*/
+
 header > img {
     display: flex;
     justify-content: center;
@@ -36,7 +37,7 @@ width: 100%;
   position: relative;
   text-align: center;
   color: rgb(255, 255, 255);
-  font-size: 40px;
+  font-size: 3vw;
 }
 
 .texteBanniere{
@@ -129,6 +130,9 @@ width: 100%;
     padding: 2.5vw;
 }
 
+.flexActivites > article{
+  text-align: center;
+}
 /*règlage titre*/
 .festivite{
   margin-top: 3vw;
@@ -169,6 +173,10 @@ text-align: center;
   h2{
     font-size: medium;
     line-height: 3.5vw;
+  }
+
+  .textCentre h2{
+    line-height: 5vw;
   }
 
   .button-day button a{
@@ -255,6 +263,10 @@ text-align: center;
     display: flex;
       flex-direction: column;
   }
+
+  .container-bio p{
+    line-height: 3.5vw;
+  }
 }
 /*////////////////////////////////////////PAGE BIO//////////////////////////////////*/
 .h2-bio{
@@ -268,12 +280,11 @@ text-align: center;
 .container-bio {
   display: flex;
   align-items: center;
-  height: 90vh;
   padding: 3vw 7vw 3vw 7vw;
 }
 
 .image-bio {
-  height: 80vh;
+
   width: 50%;
   
 }
@@ -334,7 +345,7 @@ button a:hover{
 /*//////////////////////////////////////////////// PROGRAMME //////////////////////////////////////////*/
 .titre_prog{
   text-align: center;
-  font-size: 30px;
+  font-size: 3vw;
   margin-top: 4vw;
 }
 
@@ -487,6 +498,14 @@ form{
   margin-top: 4vw;
   margin-bottom: 3vw;
 }
+
+#renseignement{
+
+  text-align: center;
+}
+.formFont{
+  font-family: helvetica;
+}
 #reserve{
 margin-top: 20px;
 text-align: center;
@@ -497,7 +516,9 @@ text-align: center;
 }
 
 #titre_venir{
-  margin: 160px;
+
+  font-family: helvetica;
+
 }
 
 /*modification des champs*/
@@ -508,13 +529,23 @@ input{
   background:none;
   border:0;
   border-bottom:2px solid #bebed2;
-  
 }
 
 /*container de dates de reservation*/
 .container-reservation {
   display: flex;
   justify-content:space-evenly;
+}
+
+#attention{
+  color: #5e6172;
+  font-family: helvetica;
+
+}
+
+.boutonValider{
+  border-radius: 0.9vw;
+  border: 1px solid;
 }
 
 /*taille checkbox*/
@@ -594,6 +625,11 @@ input{
   margin-right: 2vw;
 }
 
+@media screen and (max-width: 700px){
+  #scroll_to_top img{
+    width : 5vw;
+  }
+}
 
 /*MODE JOUR/NUIT*/
 @import url('https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap');
@@ -602,36 +638,44 @@ input{
 .nuit{
   background-color: #4a4e69;
   color: whitesmoke;
+  transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-body{
-  background-color: var(--bg);
+.nuit li a{
+  color: whitesmoke;
+}
 
+.nuit article{
+  color: #000;
+}
+
+
+
+.nuit li > button{
+  color: #ffe246;
 }
 
 button{
   border:none;
   outline: none;
 background-color: transparent;
-color:var(--text);
 }
 
 #themeLogo{
- 
   font-size:x-large;
   cursor: pointer;
   background-color: transparent;
 }
 
-button.button{
-  cursor: pointer;
-  color: #000;
-  transition: all .2s;
-}
 
 button.btn:hover{
   box-shadow: 0 2px 5px var(--text);
   color: #e4e4e4;
 }
 
+
+/*Plan du site*/
+.plan-du-site{
+  text-align: center;
+}
 

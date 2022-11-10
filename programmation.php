@@ -5,6 +5,10 @@
 
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="CANEVAROLO Lucie, DUFAY Elise, ROMEAS Valentin, GIACOMETTI Lenni">
+    <meta name="description" content="Art'Ink Event est un site vitrine qui présente l'événement Art'Ink Event qui se déroulera du 30 juin au 2 juillet dans la ville du Puy-en-Velay. C'est un salon de tatouage à portée européenne qui regroupe les plus grands artistes tatoueurs perceurs de l'Europe.">
     <title>Programmation</title>
 
     <!-- Favicons -->
@@ -25,7 +29,7 @@
   </header>
 <!--bannière-->
   <div class="containerBanniere">
-            <img src="img/banniere.png" alt="Bannière Art'Ink" id="banniere">
+            <img src="img/banniere.jpg" alt="Bannière Art'Ink" id="banniere">
                 <div class="texteBanniere">
                         <p><?php echo titrepageprog;?></p>
                     </div>
@@ -50,7 +54,7 @@
   
               <div class="row-prog">
                 <div class="icone">
-                    <img src="img/icones/tatoueurs.png">
+                    <img src="img/icones/tatoueurs.png" alt="Icone tatouage">
                   </div>
                   <div class="time"><time>13:00 - 14:00</time></div>
                   <div class="texte">
@@ -61,7 +65,7 @@
   
               <div class="row-prog">
               <div class="icone">
-                  <img src="img/icones/jury.png">
+                  <img src="img/icones/jury.png" alt="Icone de vote">
                 </div>
                 <div class="time"><time>14:00 - 15:00</time></div>
                 <div class="texte">
@@ -72,7 +76,7 @@
   
               <div class="row-prog">
               <div class="icone">
-                  <img src="img/icones/stand.png">
+                  <img src="img/icones/stand.png" alt="Icone de stand">
                 </div>
                 <div class="time"><time>15:00 - 20:00</time></div>
                 <div class="texte">
@@ -83,7 +87,7 @@
   
               <div class="row-prog">
                 <div class="artiste">
-                  <img src="img/artistes/inga.png">
+                  <img src="img/artistes/inga.png" alt="Photo membre d'Ingallawash">
                 </div> 
                 <div class="time"><time>21:00 - 23:00</time>
                 </div>
@@ -105,7 +109,7 @@
   
               <div class="row-prog">
                   <div class="icone">
-                    <img src="img/icones/stand.png">
+                    <img src="img/icones/stand.png" alt="Icone de stand">
                   </div>
                   <div class="time"><time>10:00 - 20:00</time>
                   </div>
@@ -117,7 +121,7 @@
   
               <div class="row-prog">
                   <div class="artiste">
-                    <img src="img/artistes/lucile_prog.png">
+                    <img src="img/artistes/lucile_prog.png" alt="Photo de Lucile">
                   </div>
                   <div class="time"><time>14:00 - 16:00</time>
                   </div>
@@ -129,7 +133,7 @@
   
               <div class="row-prog">
                 <div class="artiste">
-                  <img src="img/artistes/veg.png">
+                  <img src="img/artistes/veg.png" alt="photo de suspending">
                 </div>
                 <div class="time"><time>16:00 - 19:00</time>
                 </div>
@@ -141,7 +145,7 @@
   
               <div class="row-prog">
                 <div class="artiste">
-                  <img src="img/artistes/gojira.png">
+                  <img src="img/artistes/gojira.png" alt="photo de gojira">
                 </div>
                 <div class="time"><time>22:00 - 00:30</time>
                 </div>
@@ -163,7 +167,7 @@
   
               <div class="row-prog">
               <div class="icone">
-                  <img src="img/icones/stand.png">
+                  <img src="img/icones/stand.png" alt="icone de stand">
                 </div>
                 <div class="time"><time>10:00 - 13:00</time>
                 </div>
@@ -175,7 +179,7 @@
   
               <div class="row-prog">
               <div class="icone">
-                  <img src="img/icones/coupe.png">
+                  <img src="img/icones/coupe.png" alt="icone de coupe">
                 </div>
                 <div class="time"><time>13:00 - 15:00</time>
                 </div>
@@ -188,7 +192,7 @@
   
               <div class="row-prog">
               <div class="icone">
-                  <img src="img/icones/stand.png">
+                  <img src="img/icones/stand.png" alt="icone de stand">
                 </div>
                 <div class="time"><time>15:00 - 20:00</time>
                 </div>
@@ -216,12 +220,12 @@
           <h2><?php echo plansalon;?></h2>
         </div>   
         <div class="image-plan">
-          <img src="img/plansalon.png" width="800px">
+          <img src="<?php echo photosalon;?>" width="800px" alt="Plan du salon">
         </div>
       </section>
 
       <div id="scroll_to_top">
-        <a href="#top"><img src="img/icones/fleche.png" alt="Retourner en haut" /></a>
+        <a href="#top"><img src="img/icones/fleche.png" alt="Retourner en haut"/></a>
       </div>
 
       <footer>

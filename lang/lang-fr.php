@@ -3,7 +3,7 @@
 
 define('titreun', 'Salon du tatouage du Puy-en-Velay le ');
 
-define('intro', 'Le Salon réunit des tatoueurs de différentes origines : anglais, belge, allemand, de toute l’Europe.Afin de vous faire découvrir la culture du tatouage et vous tatouer sur place place, réservez votre week-end du 30, 1 & 2 juillet 2023');
+define('intro', 'Le Salon réunit des tatoueurs de différentes origines : anglais, belge, allemand, de toute l’Europe. Afin de vous faire découvrir la culture du tatouage et vous tatouer sur place place, réservez votre week-end du 30, 1 & 2 juillet 2023');
 
 define('billetterie', 'Billetterie');
 
@@ -96,6 +96,8 @@ define('souspresentconcours', 'Défilé des mannequins qui auront été tatoués
 
 define('plansalon', 'Plan du salon');
 
+define('photosalon', 'img/plansalon.jpg');
+
 /*contact*/
 
 define('adresse', 'Adresse mail: artinkevent@gmail.com<br>Téléphone: 06.05.23.63.78');
@@ -116,14 +118,14 @@ define('renseignement', 'Veuillez renseigner votre <couleur>nom</couleur>, <coul
 
 define('prereservation', 'La pré-réservation');
 
-define('nbplaces', 'Nombres de places que vous souhaitez prendre ? ');
+define('nbplaces', 'Nombres de places que vous souhaitez prendre ?* ');
 
-define('jourvenir', 'Quel(s) jour(s) souhaitez-vous venir? ');
+define('jourvenir', 'Quel(s) jour(s) souhaitez-vous venir?* ');
 
 
 define('annuler', 'Vous souhaitez annuler votre réservation?');
 
-define('saisir', 'Saisissez votre adresse mail');
+define('saisir', 'Saisissez votre adresse mail*');
 
 define('selectcrea', 'Selectionnez le créateur pour lequel vous souhaitez modifier les informations');
 
@@ -150,4 +152,7 @@ define('bille', 'Billetterie');
 
 define('infofooter', 'Vous souhaitez découvrir le nouveau salon du tatouage Artink event?<br>Effectuez une pré-réservation grâce au formulaire dans l’onglet billetterie!');
 
+/*Plan site*/
+define('titrepageplansite','Plan du site');
+define('plansite', 'Plan du site');
 ?>

@@ -6,6 +6,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="author" content="CANEVAROLO Lucie, DUFAY Elise, ROMEAS Valentin, GIACOMETTI Lenni">
+        <meta name="description" content="Art'Ink Event est un site vitrine qui présente l'événement Art'Ink Event qui se déroulera du 30 juin au 2 juillet dans la ville du Puy-en-Velay. C'est un salon de tatouage à portée européenne qui regroupe les plus grands artistes tatoueurs perceurs de l'Europe.">
         <link href="img/logos/favicon.png" rel="icon">
 
         <title>Contact</title>
@@ -17,9 +19,7 @@
         <!-- Main Stylesheet File -->
         <link href="style/style.css" rel="stylesheet">
         <link rel="stylesheet" href="style/style-menu-footer.css">
-        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.1/dist/leaflet.css" 
-          integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
-        crossorigin=""/>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.1/dist/leaflet.css" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin=""/>
 
       <!-- Script -->
       <script
@@ -39,7 +39,7 @@
 
         <!--bannière-->
         <div class="containerBanniere">
-          <img src="img/banniere.png" alt="Bannière Art'Ink" id="banniere">
+          <img src="img/banniere.jpg" alt="Bannière Art'Ink" id="banniere">
           <div class="texteBanniere">
             <p>Contact</p>
           </div>

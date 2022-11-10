@@ -2,7 +2,7 @@
 
 define('titreun', 'Tattoo salon of the Puy-en-Velay the ');
 
-define('intro', 'The Salon brings together tattoo artists of different origins: English, Belgian, German, from all over Europe.To make you discover the culture of tattooing and tattoo yourself on site, book your weekend of June 30, July 1 & 2, 2023');
+define('intro', 'The Salon brings together tattoo artists of different origins: English, Belgian, German, from all over Europe. To make you discover the culture of tattooing and tattoo yourself on site, book your weekend of June 30, July 1 & 2, 2023');
 
 define('billetterie', 'Ticketing');
 
@@ -95,6 +95,8 @@ define('souspresentconcours', 'Parade of models who will have been tattooed then
 
 define('plansalon', 'Floor plan');
 
+define('photosalon', 'img/plansalon_en.png');
+
 /*contact*/
 
 define('adresse', 'E-mail: artinkevent@gmail.com<br> Telephone: 06.05.23.63.78');
@@ -148,4 +150,8 @@ define('bille', 'Ticketing');
 /*footer*/
 
 define('infofooter', 'Would you like to discover the new Artink event tattoo salon?<br> <br>Make a pre-booking using the form in the ticketing tab!');
+
+/*Plan site*/
+define('titrepageplansite','Sitemap');
+define('plansite', 'Sitemap');
 ?>

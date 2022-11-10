@@ -1,0 +1,5 @@
+http://artinkeventlpev.mmi-lepuy.fr
+
+User-Agent : *
+Disallow: /
+Allow: /*.css?*
